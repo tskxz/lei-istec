@@ -1,0 +1,27 @@
+numero1 <- 0  
+numero2 <- 0  
+numero3 <- 0  
+numero4 <- 0  
+menor <- 0    
+
+Escrever("Indica primeiro número:")  
+Ler(numero1)  
+Escrever("Indica segundo número:")  
+Ler(numero2)  
+Escrever("Indica terceiro número:")  
+Ler(numero3)  
+Escrever("Indica quarto número:")  
+Ler(numero4)  
+  
+menor <- numero1  
+
+Se numero2 < menor Então  
+    menor <- numero2  
+Fim Se  
+Se numero3 < menor Então  
+    menor <- numero3  
+Fim Se  
+Se numero4 < menor Então  
+    menor <- numero4  
+Fim Se  
+Escrever("O menor número é:", menor)  
