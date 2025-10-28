@@ -1,0 +1,16 @@
+[1, 2, 3]
+[5, 4, 2]
+[4, 5, 2]
+3x3
+3/2 e igual a 1
+logo [1] e na coluna do meio, mesma coisa da linha
+
+int n_linhas
+int n_colunas
+
+// para fazer
+do:
+	ler(n_linhas)
+	ler(n_colunas)
+
+while(n_linhas != n_colunas)

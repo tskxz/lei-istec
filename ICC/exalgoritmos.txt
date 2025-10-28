@@ -1,0 +1,177 @@
+1. Algoritmo: Divisão de dois números
+Descrição: Este algoritmo pede dois números ao utilizador e divide-os, prevendo a possibilidade de não poder dividir por zero
+[Variáveis necessárias]
+dividendo <- 0
+divisor <- 0
+resultado <- 0
+[Leitura dos valores a dividir]
+dividendo <- Ler("Digita o valor do Dividendo: ")
+divisor <- Ler("Digita o valor do Divisor: ")
+[Processamento e Escrita de Informação]
+SE divisor = 0 ENTAO
+    Escrever("Erro: Não é possível dividir por zero!")
+SENAO
+    resultado <- dividendo / divisor
+    Escrever("O resultado da divisão é: ", resultado)
+FIM SE
+
+2. Algoritmo: Menor de 5 números
+Descrição: Este algoritmo lê 5 números e encontra o menor deles
+[Variáveis necessárias]
+numero <- 0
+menor <- 0
+contador <- 0
+[Processamento]
+PARA contador DE 1 ATÉ 5 FAZER
+    numero <- Ler("Digita o número ", contador, ": ")
+    SE contador = 1 ENTAO
+        menor <- numero
+    SENAO
+        SE numero < menor ENTAO
+            menor <- numero
+        FIM SE
+    FIM SE
+FIM PARA
+[Escrita de Informação]
+Escrever("O menor número é: ", menor)
+
+3. Algoritmo: Operações básicas
+Descrição: Este algoritmo lê dois números e mostra as operações básicas
+[Variáveis necessárias]
+numero1 <- 0
+numero2 <- 0
+[Leitura dos valores]
+numero1 <- Ler("Digita o primeiro número: ")
+numero2 <- Ler("Digita o segundo número: ")
+[Processamento e Escrita]
+Escrever("Soma: ", numero1 + numero2)
+Escrever("Subtração: ", numero1 - numero2)
+Escrever("Multiplicação: ", numero1 * numero2)
+SE numero2 = 0 ENTAO
+    Escrever("Divisão: Não é possível dividir por zero!")
+SENAO
+    Escrever("Divisão: ", numero1 / numero2)
+FIM SE
+
+4. Algoritmo: Cálculo de idade
+Descrição: Calcula a idade baseada no ano de nascimento, com validações
+[Variáveis necessárias]
+anoNascimento <- 0
+anoAtual <- 2024
+idade <- 0
+[Leitura do valor]
+anoNascimento <- Ler("Digita o ano de nascimento: ")
+[Processamento e Validação]
+SE anoNascimento > 2024 ENTAO
+    Escrever("Erro: Ninguém nasceu depois de 2024!")
+SENAO SE anoNascimento < 1900 ENTAO
+    Escrever("Erro: Pessoa já não está viva!")
+SENAO
+    idade <- anoAtual - anoNascimento
+    Escrever("A idade é: ", idade, " anos")
+FIM SE
+
+5. Algoritmo: Troca de valores
+Descrição: Lê dois valores e troca-os entre as variáveis
+[Variáveis necessárias]
+A <- 0
+B <- 0
+temp <- 0
+[Leitura dos valores]
+A <- Ler("Digita o valor de A: ")
+B <- Ler("Digita o valor de B: ")
+[Processamento - Troca]
+temp <- A
+A <- B
+B <- temp
+[Escrita dos resultados]
+Escrever("Após a troca:")
+Escrever("A = ", A)
+Escrever("B = ", B)
+
+6. Algoritmo: Conversão Celsius para Fahrenheit
+Descrição: Converte temperatura de Celsius para Fahrenheit
+[Variáveis necessárias]
+celsius <- 0
+fahrenheit <- 0
+[Leitura do valor]
+celsius <- Ler("Digita a temperatura em Celsius: ")
+[Processamento]
+fahrenheit <- (9 * celsius + 160) / 5
+[Escrita do resultado]
+Escrever(celsius, "°C = ", fahrenheit, "°F")
+
+7. Algoritmo: Cálculo de mensalidade
+Descrição: Calcula a mensalidade de um micro-ondas com juros de 20% em 6 meses
+[Variáveis necessárias]
+valorProduto <- 0
+valorTotal <- 0
+mensalidade <- 0
+[Leitura do valor]
+valorProduto <- Ler("Digita o valor do micro-ondas: ")
+[Processamento]
+valorTotal <- valorProduto * 1.20  // 20% de juros
+mensalidade <- valorTotal / 6
+[Escrita do resultado]
+Escrever("Valor total com juros: ", valorTotal, "€")
+Escrever("Mensalidade (6 meses): ", mensalidade, "€")
+
+8. Algoritmo: Mês por extenso
+Descrição: Mostra o nome do mês baseado no número
+[Variáveis necessárias]
+mes <- 0
+[Leitura do valor]
+mes <- Ler("Digita o número do mês (1-12): ")
+[Processamento e Escrita]
+ESCOLHA mes
+    CASO 1: Escrever("Janeiro")
+    CASO 2: Escrever("Fevereiro")
+    CASO 3: Escrever("Março")
+    CASO 4: Escrever("Abril")
+    CASO 5: Escrever("Maio")
+    CASO 6: Escrever("Junho")
+    CASO 7: Escrever("Julho")
+    CASO 8: Escrever("Agosto")
+    CASO 9: Escrever("Setembro")
+    CASO 10: Escrever("Outubro")
+    CASO 11: Escrever("Novembro")
+    CASO 12: Escrever("Dezembro")
+    CASO CONTRÁRIO: Escrever("Mês inválido!")
+FIM ESCOLHA
+
+9. Algoritmo: Consumo médio do carro
+Descrição: Calcula o consumo médio em €/km e €/100km
+[Variáveis necessárias]
+distancia <- 0
+valorGasto <- 0
+consumoKm <- 0
+consumo100Km <- 0
+[Leitura dos valores]
+distancia <- Ler("Digita a distância percorrida (km): ")
+valorGasto <- Ler("Digita o valor gasto em combustível (€): ")
+[Processamento]
+consumoKm <- valorGasto / distancia
+consumo100Km <- consumoKm * 100
+[Escrita dos resultados]
+Escrever("Consumo por km: ", consumoKm, "€/km")
+Escrever("Consumo por 100 km: ", consumo100Km, "€/100km")
+
+10. Algoritmo: Consumo médio em litros
+Descrição: Calcula o consumo médio em litros/km e litros/100km
+[Variáveis necessárias]
+distancia <- 0
+valorGasto <- 0
+precoGasolina <- 1.80
+litrosGastos <- 0
+consumoLitrosKm <- 0
+consumoLitros100Km <- 0
+[Leitura dos valores]
+distancia <- Ler("Digita a distância percorrida (km): ")
+valorGasto <- Ler("Digita o valor gasto em combustível (€): ")
+[Processamento]
+litrosGastos <- valorGasto / precoGasolina
+consumoLitrosKm <- litrosGastos / distancia
+consumoLitros100Km <- consumoLitrosKm * 100
+[Escrita dos resultados]
+Escrever("Consumo por km: ", consumoLitrosKm, " litros/km")
+Escrever("Consumo por 100 km: ", consumoLitros100Km, " litros/100km")
