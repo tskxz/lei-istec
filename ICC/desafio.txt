@@ -1,4 +1,0 @@
-
-se pastor1 dar 1, pastor2 recebe dobro das ovelhas de p1
-se pastor2 dar 1, pastor1 fica com metade de pastor2
-quantas ovelhas cada um fica
