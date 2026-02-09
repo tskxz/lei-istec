@@ -1,5 +1,5 @@
 ### 1. Revisões de Análise Matemática
-- Os números reais e a reta real  
+- [x] Os números reais e a reta real  
 - Linhas, círculos e parábolas  
 - Funções e sua representação gráfica  
 - Tipos de funções  
