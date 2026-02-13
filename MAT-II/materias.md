@@ -2,7 +2,7 @@
 - [x] Os números reais e a reta real  
 - [x] Linhas, círculos e parábolas  
 - [x] Funções e sua representação gráfica  
-- Tipos de funções  
+- [x] Tipos de funções  
 - Combinação de funções  
 - Funções trigonométricas  
 
