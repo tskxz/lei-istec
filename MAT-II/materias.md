@@ -3,7 +3,7 @@
 - [x] Linhas, círculos e parábolas  
 - [x] Funções e sua representação gráfica  
 - [x] Tipos de funções  
-- Combinação de funções  
+- [x] Combinação de funções  
 - Funções trigonométricas  
 
 ### 2. Limites e Continuidade
