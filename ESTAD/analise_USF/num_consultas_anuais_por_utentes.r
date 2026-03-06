@@ -21,5 +21,24 @@ tabela_frequencias <- data.frame(
   "Fr" = round(as.vector(frequencia_relativa_acumulada), 3)
 )
 
-library(knitr)
-kable(tabela_frequencias, caption = "Tabela de Frequências")
+library(gridExtra)
+library(grid)
+
+# Criar o arquivo PNG
+png("tabela_frequencias.png", width = 800, height = 400, res = 120)
+
+# Criar uma tabela com grid.table
+grid.table(tabela_frequencias,
+           rows = NULL,
+           theme = ttheme_default(
+             core = list(fg_params = list(cex = 0.9)),
+             colhead = list(fg_params = list(cex = 1, fontface = "bold"))
+           ))
+
+# Adicionar título
+grid.text("Tabela de Frequências - Consultas por Utente",
+          y = unit(0.98, "npc"),
+          x = unit(0.5, "npc"),
+          gp = gpar(fontsize = 14, fontface = "bold"))
+
+dev.off()
