@@ -73,7 +73,6 @@ Rede D
 Router#configure terminal
 Enter configuration commands, one per line.  End with CNTL/Z.
 Router(config)#interface GigabitEthernet0/0
-Router(config-if)#ip address 10.48.0.1 255.0.0.0
 Router(config-if)#ip address 10.48.0.1 255.254.0.0
 Router(config-if)#no shutdown
 
@@ -83,7 +82,6 @@ Router#
 Router#configure terminal
 Enter configuration commands, one per line.  End with CNTL/Z.
 Router(config)#interface FastEthernet0/0
-Router(config-if)#ip address 10.50.0.1 255.0.0.0
 Router(config-if)#ip address 10.50.0.1 255.255.248.0
 Router(config-if)#no shutdown
 
@@ -93,7 +91,28 @@ Router#
 Router#configure terminal
 Enter configuration commands, one per line.  End with CNTL/Z.
 Router(config)#interface FastEthernet0/0
-Router(config-if)#ip address 10.50.8.1 255.0.0.0
 Router(config-if)#ip address 10.50.8.1 255.255.254.0
 Router(config-if)#no shutdown
+
+REDE A
+Router>enable
+Router#
+Router#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#interface FastEthernet0/0
+Router(config-if)#ip address 10.50.8.1 255.255.254.0
+Router(config-if)#no shutdown
+
+router 3
+Router(config)#interface GigabitEthernet0/1
+Router(config-if)#ip address 10.50.11.13 255.255.255.252
+
+router 2
+Router(config)#interface Serial0/3/1
+Router(config-if)#ip address 10.50.11.2 255.255.255.248
+
+router 1
+Router(config)#interface Serial0/0/0
+Router(config-if)#ip address 10.50.11.1 255.255.255.252
+
 
