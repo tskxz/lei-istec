@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\tanjil\\Documents\\LEI1-istec\\P-II\\ModeloConsola\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1B11FC1E-74FA-44C0-8600-059D5CF75ABC}|ModeloConsola\\ModeloConsola.csproj|c:\\users\\tanjil\\documents\\lei1-istec\\p-ii\\modeloconsola\\modeloconsola\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B11FC1E-74FA-44C0-8600-059D5CF75ABC}|ModeloConsola\\ModeloConsola.csproj|solutionrelative:modeloconsola\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7C495CAB-1D80-4794-BADE-812BFC9CA21D}|ModeloConsola\\ModeloConsola.csproj|c:\\users\\tanjil\\documents\\lei1-istec\\p-ii\\modeloconsola\\modeloconsola\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C495CAB-1D80-4794-BADE-812BFC9CA21D}|ModeloConsola\\ModeloConsola.csproj|solutionrelative:modeloconsola\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B11FC1E-74FA-44C0-8600-059D5CF75ABC}|ModeloConsola\\ModeloConsola.csproj|c:\\users\\tanjil\\documents\\lei1-istec\\p-ii\\modeloconsola\\modeloconsola\\models\\pessoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B11FC1E-74FA-44C0-8600-059D5CF75ABC}|ModeloConsola\\ModeloConsola.csproj|solutionrelative:modeloconsola\\models\\pessoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7C495CAB-1D80-4794-BADE-812BFC9CA21D}|ModeloConsola\\ModeloConsola.csproj|c:\\users\\tanjil\\documents\\lei1-istec\\p-ii\\modeloconsola\\modeloconsola\\models\\pessoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C495CAB-1D80-4794-BADE-812BFC9CA21D}|ModeloConsola\\ModeloConsola.csproj|solutionrelative:modeloconsola\\models\\pessoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,21 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\tanjil\\Documents\\LEI1-istec\\P-II\\ModeloConsola\\ModeloConsola\\Program.cs",
-              "RelativeDocumentMoniker": "ModeloConsola\\Program.cs",
-              "ToolTip": "C:\\Users\\tanjil\\Documents\\LEI1-istec\\P-II\\ModeloConsola\\ModeloConsola\\Program.cs",
-              "RelativeToolTip": "ModeloConsola\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-11T21:49:29.716Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -41,9 +28,22 @@
               "RelativeDocumentMoniker": "ModeloConsola\\Models\\Pessoa.cs",
               "ToolTip": "C:\\Users\\tanjil\\Documents\\LEI1-istec\\P-II\\ModeloConsola\\ModeloConsola\\Models\\Pessoa.cs",
               "RelativeToolTip": "ModeloConsola\\Models\\Pessoa.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAUwDUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-11T21:07:25.125Z",
+              "WhenOpened": "2026-03-11T22:10:58.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\tanjil\\Documents\\LEI1-istec\\P-II\\ModeloConsola\\ModeloConsola\\Program.cs",
+              "RelativeDocumentMoniker": "ModeloConsola\\Program.cs",
+              "ToolTip": "C:\\Users\\tanjil\\Documents\\LEI1-istec\\P-II\\ModeloConsola\\ModeloConsola\\Program.cs",
+              "RelativeToolTip": "ModeloConsola\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T21:49:29.716Z",
               "EditorCaption": ""
             }
           ]

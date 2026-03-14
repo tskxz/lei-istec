@@ -1,4 +1,6 @@
-﻿using System;
+Pessoa.cs
+
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -50,4 +52,20 @@ namespace ModeloConsola.Models
 
     }
 
+}
+
+
+
+
+Main
+static void Main(string[] args)
+{
+    Pessoa p;
+    p = new Pessoa();
+    // p._nome = "João";
+    p.Ler();
+    p.Escrever();
+    Console.ReadLine();
+
+    p.mostrarIMC();
 }

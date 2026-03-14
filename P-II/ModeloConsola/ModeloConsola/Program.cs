@@ -12,6 +12,8 @@ namespace ModeloConsola
             p.Ler();
             p.Escrever();
             Console.ReadLine();
+
+            p.mostrarIMC();
         }
     }
 }
