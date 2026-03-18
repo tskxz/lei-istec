@@ -1,0 +1,69 @@
+Para o seguinte cenário:
+
+Cenário /Situação Problema 1
+Uma autarquia portuguesa decide implementar um sistema de Inteligência Artificial
+para apoiar decisões administrativas, nomeadamente:
+Priorização automática de pedidos de apoio social;
+Identificação preditiva de risco de abandono escolar;
+Otimização da gestão de recursos municipais;
+Na apresentação pública do projeto, o Presidente da Câmara afirma:
+“A tecnologia é objetiva e neutra. O algoritmo decide com base em
+dados e não em opiniões.”
+
+Fiz os seguintes pontos:
+
+Identificação do problema
+
+O seguinte problema se consta na seguinte afirmação do Presidente da Câmara: "a tecnologia é neutra".
+
+O problema dessa afirmação é que não podemos dizer se é neutro, porque estamos a descartar o humano e a sociedade. Isso é uma questão técnica, epistemológica e política. O funcionamento das tecnologias baseiam se em programas, sistemas e algoritmos que processam os dados. Além de técnica, a epistemológica vem devido a razão de envolvimento de conhecimento. Um algoritmo pode trazer factos baseados a partir dos dados obtidos. A partir desses dados, a Inteligência Artificial faz as decisões automatizadas que vai resultar num impacto social e á responsabilidade das instituições.
+
+Seleção e enquadramento concetual
+A ciência tem o domínio do conhecimento o humano em que a natureza é explicito enquanto a técnica baseia se na parte prática e tático de saber fazer. A tecnologia é uma integração da técnica cientifica em que possui conhecimento que tem resultante de saber fazer. A partir da ciência, podemos ter mais hipóteses e mais soluções abertas que é o resultado do conhecimento mais amplo.
+
+A base da obra do João Caraça, selecionamos as partes importantes para descrever o cenário.
+
+Como João Caraça cita:
+
+"As principais mutações do presente são três: uma mutação técnica, uma mutação moral e social e uma mutação política". (João Caraça p.105)
+
+"A mutação técnica - a globalização da economia - pode descrever-se como o resultado da transformação da natureza do trabalho e do emprego através da introdução maciça de me máquinas cada vez mais poderosas, e, ultimamente, de computadores." (João Caraça p.105)
+
+"A mutação moral e social...resulta do controlo conseguido a partir de meados deste século sobre a fecundidade, bem como assumir pelas mulheres de um papel económico cada vez mais independentes" (João Caraça p.106)
+
+"A mutação política corresponde á necessidade crescente que se sente de <<governação>> das comunidades existentes neste planeta... " (João Caraça p.106)
+
+O João Caraça distingue a ciência com a técnica e tecnologia com as seguintes citações:
+
+"... a ciência é, pois, um elemento essencial do diálogo interminável entre o homem e o seu mundo." (João Caraça p.25)
+
+A ciência é o <<conhecimento que circula no conjunto da comunidade científica>> no conjunto da comunidade científica>> no decurso da sua atividade profissional, institucionalizada. (João Caraça p.80)
+
+"a ciência, a tecnologia e a técnica correspondem, respetivamente, aos níveis disciplinar, explicito e tácito do conhecimento gerado por virtude da interação dos humanos com a natureza que os rodeia." (João Caraça p.42)
+
+"a tecnologia tem que ver com a explicitação dos processos de produção, de fabricação e de utilização de produtos, e com a aplicação de conhecimentos científicos na concepção e definição de sistemas visando aqueles objetivos" (João Caraça p.43)
+
+"A técnica... correspondendo á operacionalização dos conhecimentos tecnológicos dirigidos para um dado objetivo prático" (João Caraça p.43)
+
+A ciência, técnica e tecnologia estão interligados um ao outro. Cada vez vai evoluindo cada parte a partir do conhecimento humano.
+A técnica e a tecnologia são domínios de saber-fazer, em que está ligado na ciência no domínio de saber e também está ligado na técnica com domínio de fazer.
+
+Posição A – A IA é essencialmente técnica e pode ser neutra se bem
+programada.
+Posição B – A IA é uma construção sociotécnica e não pode ser
+considerada neutra.
+
+A Posição A aposta na eficiência e na objetividade técnica, confia a uma programação cuidadosa e auditorias rigorosas que podem garantir a neutralidade do sistema. É uma abordagem mais rápida e menos complexa, mas com riscos significativos de perpetuar desigualdades.
+
+A Posição B reconhece a complexidade social e a não neutralidade da tecnologia, propondo mecanismos de participação, supervisão ética e primazia da decisão humana. É uma abordagem mais exigente em recursos e tempo, mas que promove a equidade, a legitimidade democrática e a confiança dos cidadãos.
+
+Solução
+Modelo Híbrido de Decisão (Humano-Algoritmo)
+A nossa solução seria Implementar um sistema onde o algoritmo apoia, mas não substitui, a decisão humana. O algoritmo produz recomendações fundamentadas, com explicação clara dos fatores considerados. Também podia registar os motivos das decisões humanas divergentes, para aprendizagem e melhoria contínua.
+
+Reflexão
+Para nós, a posição B faz mais sentido. É uma construção sociotécnica e não pode ser considerada neutra. Isso é devido à razão em que os dados são resultados das consequências da sociedade que baseia se no conhecimento humano.
+
+
+
+Concorda com o meu ponto? O que discorda e o que melhoraria?

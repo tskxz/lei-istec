@@ -1,0 +1,33 @@
+Algoritmo: Menor e Maior
+
+[Variaveis]
+num_a = 0
+num_b = 0
+num_c = 0
+num_d = 0
+num_maior = 0
+num_menor = 0
+Escrever("Digite o numero a: ")
+Ler(num_a)
+Escrever("Digite o numero b: ")
+Ler(num_b)
+se(num_a > num_b)
+    num_maior = num_a
+    num_menor = num_b
+senao
+    num_maior = num_b
+    num_menor = num_a
+Escrever("Digite o numero c: ")
+Ler(num_c)
+    se(num_c > num_maior)
+        num_maior = num_c
+    se(num_c < num_menor)
+        num_menor = num_c
+Escrever("Digite o numero d: ")
+Ler(num_a)
+    se(num_d > num_maior)
+        num_maior = num_d
+    se(num_d < num_menor)
+        num_menor = num_d
+Escrever("Num Maior: ", num_maior)
+Escrever("Num menor: ", num_menor)
