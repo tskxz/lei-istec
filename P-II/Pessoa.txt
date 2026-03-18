@@ -1,0 +1,71 @@
+Pessoa.cs
+
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace ModeloConsola.Models
+{
+    public class Pessoa
+    {
+        private string _nome;
+        private string _nif;
+        private int _anoNascimento;
+        private double _peso;
+        private double _altura;
+
+        public void Ler()
+        {
+            Console.Write("Nome: ");
+            _nome = Console.ReadLine();
+            Console.Write("Nif: ");
+            _nif = Console.ReadLine();
+            Console.Write("Ano de nascimento: ");
+            _anoNascimento = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Peso: ");
+            _peso = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Altura: ");
+            _altura = Convert.ToDouble(Console.ReadLine());
+        }
+
+        public void Escrever()
+        {
+            int idade = 0;
+            idade = DateTime.Now.Year - _anoNascimento;
+            string saida = $"Nome: {_nome}\nNif: {_nif}\nAno de nascimento: {_anoNascimento}\nIdade: {idade}\nPeso: {_peso}\nAltura: {_altura}";
+            Console.WriteLine(saida);
+        }
+
+        // imc = p / (a * a)
+        private double IMC() {
+            double imc = 0;
+            imc = _peso / (_altura * _altura);
+            return imc;
+        }
+    
+        public void mostrarIMC() {
+            double imc = IMC();
+            Console.WriteLine($"O IMC é {imc}");
+        }
+
+
+
+    }
+
+}
+
+
+
+
+Main
+static void Main(string[] args)
+{
+    Pessoa p;
+    p = new Pessoa();
+    // p._nome = "João";
+    p.Ler();
+    p.Escrever();
+    Console.ReadLine();
+
+    p.mostrarIMC();
+}
