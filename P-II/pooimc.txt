@@ -1,0 +1,70 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace demoo.Models
+{
+    public class Ma
+    {
+        private string naoMexer;
+        private decimal peso;
+        private decimal altura;
+
+        /*
+        public void Ler()
+        {
+            Console.WriteLine("Escreva algo: ");
+            naoMexer = Console.ReadLine();
+            naoMexer = naoMexer.Trim();
+            if(naoMexer.Length == 0 )
+            {
+                naoMexer = "deves indicar qlqr coisa";
+            }
+        }
+        */
+
+        public void Ler(string texto)
+        {
+            naoMexer = texto;
+            naoMexer.Trim();
+            if(naoMexer.Length == 0)
+            {
+                naoMexer = "deves indicar qqlr coisa";
+            }
+        }
+        public void Escrever()
+        {
+            Console.WriteLine(naoMexer);
+        }
+
+        public void LerPeso(decimal peso_)
+        {
+            peso = peso_;
+            if (peso_ < 0)
+            {
+                peso = 0.5M;
+            }
+        }
+
+        public void LerAltura(decimal altura_)
+        {
+            altura = altura_;
+            if (altura < 0)
+            {
+                altura = 0.2M;
+            }
+        }
+
+        private decimal calcularIMC() { // peso / (altura * altura) 
+            decimal imc = peso / (altura * altura);
+            return imc;
+        }
+
+        public void mostrarIMC() {
+            decimal imc = calcularIMC();
+            Console.WriteLine("A sua altura: " + altura);
+            Console.WriteLine("O seu peso: " + peso);
+            Console.WriteLine("O seu imc: " + imc);
+        }
+    }
+}

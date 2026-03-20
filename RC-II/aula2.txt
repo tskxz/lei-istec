@@ -30,3 +30,50 @@ ip address 192.168.0.6 255.255.255.252
 ip address 192.168.0.9 255.255.255.252
 ip address 192.168.10.1 255.255.255.128
 no shutdown
+
+
+router eigrp 10
+255.255.255.0
+0.0.0.2555
+255.255.255.128
+0.0.0.127
+
+network 192.168.10.0 0.0.0.127
+network 192.168.0.8 0.0.0.3
+
+router eigrp 10
+network 192.168.10.0 0.0.0.127
+network 192.168.0.8 0.0.0.3
+
+no router rip
+router eigrp 10
+network 192.168.0.4 0.0.0.3
+
+no router rip
+router eigrp 10
+network 192.168.0.4 0.0.0.3
+
+network 192.168.0.0 0.0.0.3
+no auto-summary
+
+passive-interface gigabitEthernet 0/0
+
+no router eigrp 10
+router ospf 7
+router ospf 1
+network 172.29.0.0 0.0.255.255.255 area 0
+network 192.168.0.0 0.0.0.3 area 0
+passive-interface gigabitEternet 0/0
+
+router ospf 1
+network 192.168.0.4 0.0.0.3 area 0
+network 10.10.22.0 0.0.0.127 area 0
+passive-interface gigabitEthernet 0/0
+
+router ospf 1
+network 192.168.0.4 0.0.0.3 area 0
+
+router ospf1 
+network 192.168.0.4 0.0.0.3 area 0
+network 192.168.0.8 0.0.0.3 area 0
+network 192.168.10.0 0.0.0.127 area 0
