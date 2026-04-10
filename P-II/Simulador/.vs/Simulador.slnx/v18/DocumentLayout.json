@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\tanjil\\Documents\\LEI1-istec\\P-II\\Simulador\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4BDEDAF8-FD7B-442F-8415-2B5C2F0A6B37}|Simulador\\Simulador.csproj|c:\\users\\tanjil\\documents\\lei1-istec\\p-ii\\simulador\\simulador\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BDEDAF8-FD7B-442F-8415-2B5C2F0A6B37}|Simulador\\Simulador.csproj|solutionrelative:simulador\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BDEDAF8-FD7B-442F-8415-2B5C2F0A6B37}|Simulador\\Simulador.csproj|c:\\users\\tanjil\\documents\\lei1-istec\\p-ii\\simulador\\simulador\\models\\simulador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BDEDAF8-FD7B-442F-8415-2B5C2F0A6B37}|Simulador\\Simulador.csproj|solutionrelative:simulador\\models\\simulador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Simulador.cs",
+              "DocumentMoniker": "C:\\Users\\tanjil\\Documents\\LEI1-istec\\P-II\\Simulador\\Simulador\\Models\\Simulador.cs",
+              "RelativeDocumentMoniker": "Simulador\\Models\\Simulador.cs",
+              "ToolTip": "C:\\Users\\tanjil\\Documents\\LEI1-istec\\P-II\\Simulador\\Simulador\\Models\\Simulador.cs",
+              "RelativeToolTip": "Simulador\\Models\\Simulador.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAswHQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T21:30:39.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\tanjil\\Documents\\LEI1-istec\\P-II\\Simulador\\Simulador\\Program.cs",
+              "RelativeDocumentMoniker": "Simulador\\Program.cs",
+              "ToolTip": "C:\\Users\\tanjil\\Documents\\LEI1-istec\\P-II\\Simulador\\Simulador\\Program.cs",
+              "RelativeToolTip": "Simulador\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T21:30:12.949Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
