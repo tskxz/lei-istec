@@ -1,0 +1,101 @@
+﻿using System;
+using influencer2022189.Models;
+using System.Collections.Generic;
+
+namespace influencer2022189
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Seguidor s1 = new Seguidor();
+            s1.setNome("Ana");
+            s1.setEmail("ana@example.com");
+            s1.setNivelSeguidor(2);
+
+            Seguidor s2 = new Seguidor();
+            s2.setNome("Bruno");
+            s2.setEmail("bruno@example.com");
+            s2.setNivelSeguidor(3);
+
+            Comentador c1 = new Comentador();
+            c1.setNome("Carlos");
+            c1.setEmail("carlos@example.com");
+            c1.setPaisOrigem("Portugal");
+
+            Comentador c2 = new Comentador();
+            c2.setNome("Diana");
+            c2.setEmail("diana@example.com");
+            c2.setPaisOrigem("Brasil");
+
+            Comentador c3 = new Comentador();
+            c3.setNome("Eduardo");
+            c3.setEmail("eduardo@example.com");
+            c3.setPaisOrigem("Angola");
+
+            Opiniao o1 = new Opiniao();
+            o1.setTitulo("Primeira opiniao");
+            o1.setResumo("Resumo da primeira opiniao.");
+            s1.addOpiniao(o1);
+
+            Opiniao o2 = new Opiniao();
+            o2.setTitulo("Segunda opiniao");
+            o2.setResumo("Resumo da segunda opiniao.");
+            s2.addOpiniao(o2);
+
+            Comentario com1 = new Comentario();
+            com1.setTexto("Bom ponto de vista.");
+            com1.setComentador(c1);
+            c1.addComentario(com1);
+
+            Comentario com2 = new Comentario();
+            com2.setTexto("Concordo parcialmente.");
+            com2.setComentador(c2);
+            c2.addComentario(com2);
+
+            Comentario com3 = new Comentario();
+            com3.setTexto("Tenho uma sugestao.");
+            com3.setComentador(c2);
+            o2.addComentario(com3);
+            c2.addComentario(com3);
+
+            Comentario com4 = new Comentario();
+            com4.setTexto("Interesante.");
+            com4.setComentador(c3);
+            o2.addComentario(com4);
+            c3.addComentario(com4);
+
+            // 4) Print activity: details, total opinions and total comments
+            List<Seguidor> seguidores = new List<Seguidor> { s1, s2 };
+            List<Comentador> comentadores = new List<Comentador> { c1, c2, c3 };
+
+            Console.WriteLine("=== Atividade da Aplicacao ===\n");
+
+            int totalOpinioes = 0;
+            int totalComentarios = 0;
+
+            foreach (var s in seguidores)
+            {
+                Console.WriteLine("Seguidor: " + s.getNome() + " (Nivel: " + s.getNivelSeguidor() + ")\nEmail: " + s.getEmail());
+                var opinioes = s.getOpinioes();
+                foreach (var o in opinioes)
+                {
+                    totalOpinioes++;
+                    Console.WriteLine("  Opiniao: " + o.getTitulo());
+                    Console.WriteLine("  Resumo: " + o.getResumo());
+                    Console.WriteLine("  Data: " + o.getDataComentario());
+                    var comentarios = o.getComentarios();
+                    foreach (var cm in comentarios)
+                    {
+                        totalComentarios++;
+                        Console.WriteLine("    Comentario por " + cm.getComentador().getNome() + ": " + cm.getTexto());
+                    }
+                }
+                Console.WriteLine();
+            }
+
+            Console.WriteLine("Total de Opinioes: " + totalOpinioes);
+            Console.WriteLine("Total de Comentarios: " + totalComentarios);
+        }
+    }
+}

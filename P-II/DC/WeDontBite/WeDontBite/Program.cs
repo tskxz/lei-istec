@@ -17,10 +17,27 @@ namespace WeDontBite
 
             a1.setDono(d1);
             
-            Console.WriteLine(d1.getInfo());
-            // Console.WriteLine(v1.getInfo());
-            Console.WriteLine(a1.getInfo());
+            Tratamento t1 = new Tratamento();
+            t1.setDesignacao("vacina");
+            t1.setCusto(5.0m);
+
+            Tratamento t2 = new Tratamento();
+            t2.setDesignacao("desparasitação");
+            t2.setCusto(10.0m);
+
+            Consulta c1 = new Consulta();
             
+            c1.setAnimal(a1);
+            c1.AddTratamento(t1);
+            c1.AddTratamento(t2);
+            Fatura f1 = new Fatura();
+            c1.setFatura(f1);
+            Console.WriteLine(c1.getInfo());
+
+            Clinica clinica = new Clinica();
+            clinica.setNome("Bite");
+            clinica.AdicionarConsulta(c1);
+            Console.WriteLine(clinica.getInfo());
         }
     }
 }

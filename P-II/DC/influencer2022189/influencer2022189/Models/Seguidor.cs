@@ -1,0 +1,38 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace influencer2022189.Models
+{
+    public class Seguidor : Pessoa
+    {
+        int _nivelSeguidor;
+        private List<Opiniao> _lstOpiniaoSeguidor;
+
+        public void setNivelSeguidor(int nivelSeguidor)
+        {
+            _nivelSeguidor = nivelSeguidor;
+        }
+
+        public int getNivelSeguidor()
+        {
+            return _nivelSeguidor;
+        }
+
+        public Seguidor() : base()
+        {
+            setNivelSeguidor(1);
+            _lstOpiniaoSeguidor = new List<Opiniao>();
+        }
+
+        public void addOpiniao(Opiniao opiniao)
+        {
+            _lstOpiniaoSeguidor.Add(opiniao);
+        }
+
+        public List<Opiniao> getOpinioes()
+        {
+            return _lstOpiniaoSeguidor;
+        }
+    }
+}

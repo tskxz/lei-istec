@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WeDontBite")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8a7107c710fd336119cc6228d4f33aa8ef740769")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3f570b46e4c0eda04107a6a8b9be18d0f3595fa0")]
 [assembly: System.Reflection.AssemblyProductAttribute("WeDontBite")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WeDontBite")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
