@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\tanjil\\Documents\\LEI1-istec\\P-II\\DC\\WpfIntroducao\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0DF7F780-DC59-40C4-BE8B-8F2A100F8120}|WpfIntroducao\\WpfIntroducao.csproj|c:\\users\\tanjil\\documents\\lei1-istec\\p-ii\\dc\\wpfintroducao\\wpfintroducao\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DF7F780-DC59-40C4-BE8B-8F2A100F8120}|WpfIntroducao\\WpfIntroducao.csproj|solutionrelative:wpfintroducao\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DF7F780-DC59-40C4-BE8B-8F2A100F8120}|WpfIntroducao\\WpfIntroducao.csproj|c:\\users\\tanjil\\documents\\lei1-istec\\p-ii\\dc\\wpfintroducao\\wpfintroducao\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0DF7F780-DC59-40C4-BE8B-8F2A100F8120}|WpfIntroducao\\WpfIntroducao.csproj|solutionrelative:wpfintroducao\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\tanjil\\Documents\\LEI1-istec\\P-II\\DC\\WpfIntroducao\\WpfIntroducao\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "WpfIntroducao\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\tanjil\\Documents\\LEI1-istec\\P-II\\DC\\WpfIntroducao\\WpfIntroducao\\MainWindow.xaml",
+              "RelativeToolTip": "WpfIntroducao\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-27T20:10:37.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\tanjil\\Documents\\LEI1-istec\\P-II\\DC\\WpfIntroducao\\WpfIntroducao\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "WpfIntroducao\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\tanjil\\Documents\\LEI1-istec\\P-II\\DC\\WpfIntroducao\\WpfIntroducao\\MainWindow.xaml.cs",
+              "RelativeToolTip": "WpfIntroducao\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T20:10:35.997Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

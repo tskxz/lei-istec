@@ -1,0 +1,15 @@
+C:\Users\tanjil\Documents\LEI1-istec\P-II\DC\DemoProps\DemoProps\bin\Debug\net10.0\DemoProps.exe
+C:\Users\tanjil\Documents\LEI1-istec\P-II\DC\DemoProps\DemoProps\bin\Debug\net10.0\DemoProps.deps.json
+C:\Users\tanjil\Documents\LEI1-istec\P-II\DC\DemoProps\DemoProps\bin\Debug\net10.0\DemoProps.runtimeconfig.json
+C:\Users\tanjil\Documents\LEI1-istec\P-II\DC\DemoProps\DemoProps\bin\Debug\net10.0\DemoProps.dll
+C:\Users\tanjil\Documents\LEI1-istec\P-II\DC\DemoProps\DemoProps\bin\Debug\net10.0\DemoProps.pdb
+C:\Users\tanjil\Documents\LEI1-istec\P-II\DC\DemoProps\DemoProps\obj\Debug\net10.0\DemoProps.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tanjil\Documents\LEI1-istec\P-II\DC\DemoProps\DemoProps\obj\Debug\net10.0\DemoProps.AssemblyInfoInputs.cache
+C:\Users\tanjil\Documents\LEI1-istec\P-II\DC\DemoProps\DemoProps\obj\Debug\net10.0\DemoProps.AssemblyInfo.cs
+C:\Users\tanjil\Documents\LEI1-istec\P-II\DC\DemoProps\DemoProps\obj\Debug\net10.0\DemoProps.csproj.CoreCompileInputs.cache
+C:\Users\tanjil\Documents\LEI1-istec\P-II\DC\DemoProps\DemoProps\obj\Debug\net10.0\DemoProps.sourcelink.json
+C:\Users\tanjil\Documents\LEI1-istec\P-II\DC\DemoProps\DemoProps\obj\Debug\net10.0\DemoProps.dll
+C:\Users\tanjil\Documents\LEI1-istec\P-II\DC\DemoProps\DemoProps\obj\Debug\net10.0\refint\DemoProps.dll
+C:\Users\tanjil\Documents\LEI1-istec\P-II\DC\DemoProps\DemoProps\obj\Debug\net10.0\DemoProps.pdb
+C:\Users\tanjil\Documents\LEI1-istec\P-II\DC\DemoProps\DemoProps\obj\Debug\net10.0\DemoProps.genruntimeconfig.cache
+C:\Users\tanjil\Documents\LEI1-istec\P-II\DC\DemoProps\DemoProps\obj\Debug\net10.0\ref\DemoProps.dll
