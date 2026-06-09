@@ -1,0 +1,11 @@
+Parte 1 pergunta 7
+Karl Popper vs. Thomas Kuhn:
+Popper via a ciência como um processo linear e cumulativo que progride pela falsificabilidade: as teorias são testadas e, ao serem refutadas, dão lugar a teorias melhores.
+Kuhn argumentava que a ciência evolui por saltos descontínuos (revoluções). O progresso ocorre quando um paradigma é abandonado em favor de outro totalmente diferente, mudando a própria percepção da realidade.
+
+
+Parte 2 pergunta 5
+UE: O objetivo principal é a proteção de direitos fundamentais, a ética e a confiança. O princípio seguido é o de uma tecnologia centrada no ser humano. O mecanismo regulatório central é o AI Act, que utiliza uma abordagem baseada no risco, proibindo sistemas de risco inaceitável e regulando estritamente os de alto risco.
+EUA: O foco principal é a inovação, a competitividade e a liderança de mercado. O princípio é o de um modelo orientado pelo mercado, com menor intervenção direta do Estado. Os mecanismos privilegiam o investimento e a liberdade do setor privado para desenvolver tecnologias rapidamente.
+China: O objetivo central é o controlo, a segurança nacional e a estabilidade social. O princípio baseia-se na soberania tecnológica e no papel central do Estado. Os mecanismos incluem uma vigilância digital intensiva, censura e uma integração profunda entre as empresas tecnológicas e as diretrizes estatais.
+A União Europeia prioriza o cidadão e os direitos. Os EUA priorizam a economia e a inovação privada. A China prioriza o controlo estatal e a segurança do regime.
