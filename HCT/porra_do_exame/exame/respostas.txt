@@ -20,10 +20,20 @@ De acordo com David Carvalhao:
 - Desafios Futuros: Alinhamento etico com os valores humanos, regulacao (como o AI Act da UE) e a gestao do impacto na economia cognitiva e no emprego.
 
 4. PARADIGMAS DA CIENCIA
-Com base na obra de Gilbert Hottois:
-- A. Paradigma Contemplativo (Antigo): Periodo da Grecia Antiga. Focado na observacao qualitativa e na busca pela essencia da natureza sem intervir nela. Figuras: Aristoteles, Platao e Arquimedes.
-- B. Paradigma Experimental (Moderno): Seculos XVI a XIX. Focado no metodo experimental e na matematizacao da natureza, vendo o cientista como observador. Figuras: Galileu Galilei, Isaac Newton e Rene Descartes.
-- C. Paradigma Operacional (Tecnociencia): Periodo Contemporaneo. Caracterizado pela simbiose total entre saber e fazer, onde a ciencia e, por si so, uma intervencao tecnica. Figuras: Alan Turing, Albert Einstein e Tim Berners-Lee.
+	1. Paradigma Contemplativo (Ciência Antiga)
+	a) Período histórico: Antiguidade, especificamente na Grécia Antiga
+	b) Principais características: Focado na observação qualitativa e na busca pela essência da natureza, sem a intenção de intervir nela
+	c) Três figuras representativas: Aristóteles, Platão e Arquimedes
+
+	2. Paradigma Experimental (Ciência Moderna)
+	a) Período histórico: Séculos XVI a XIX
+	b) Principais características: Baseado no método experimental e na matematização da natureza, tratando o cientista como um observador externo
+	c) Três figuras representativas: Galileu Galilei, Isaac Newton e René Descartes
+
+	3. Paradigma Operacional (Tecnociência)
+	a) Período histórico: Período Contemporâneo (Pós-Segunda Guerra Mundial)
+	b) Principais características: Caracterizado pela simbiose total entre saber e fazer, onde a ciência é, por si só, uma intervenção técnica
+	c) Três figuras representativas: Alan Turing, Albert Einstein e Tim Berners-Lee
 
 5. CORRENTES FILOSOFICAS DA TEORIA DO CONHECIMENTO
 - Racionalismo: A razao e a fonte principal do saber. Protagonistas: Descartes e Leibniz.
