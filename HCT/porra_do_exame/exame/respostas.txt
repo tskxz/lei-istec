@@ -81,4 +81,4 @@ Propostas para reduzir a pegada carbonica:
 12. CENARIO 1 - IA NA ADMINISTRACAO PUBLICA
 A afirmacao de que a tecnologia e objetiva e neutra e falsa, pois os algoritmos podem reproduzir os enviesamentos (preconceitos) presentes nos dados usados para o seu treino.
 - Vantagens: Maior rapidez na atribuicao de apoios, eficiencia na gestao de recursos e personalizacao dos servicos ao cidadao.
-- Riscos: Enviesamento algoritmico (discriminacao), falta de transparencia nas decisoes e riscos para a privacidade e protecao de dados dos cidadaos.
+- Riscos: Enviesamento algoritmico (discriminacao), falta de transparencia nas decisoes e riscos para a privacidade e protecao de dados dos cidadaos. 
