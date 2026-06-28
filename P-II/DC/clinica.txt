@@ -1,5 +1,0 @@
-clinica, medico, diagnostico, receita
-
-Clinica é um local onde o utente pode marcar uma consulta e o médico passa a receita.
-
-Clinica, Receita, Consulta, Medico, Utente

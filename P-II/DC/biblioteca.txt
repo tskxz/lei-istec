@@ -1,1 +1,0 @@
-Uma biblioteca é um local onde podes ler livros. Um cliente pode pedir um requisito a um livro. O cliente deve entregar o livro a uma determinada data.

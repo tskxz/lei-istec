@@ -1,3 +1,0 @@
-Um Museu possui nome e endereço, e contém várias Obras. Cada Obra tem título, autor e ano. O visitante e pode comprar um Bilhete para visitar o museu. O ingresso possui data e valor. Quando o visitante se aproxima de uma obra,  o bilhete tem que ser detetado através do dispositivo IOT e regista uma Visita à Obra.
-
-Museu, Bilhete, Obra, dispositivo IOT, Visitante
