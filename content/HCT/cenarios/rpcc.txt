@@ -1,0 +1,13 @@
+Ciência Cidadã é a colaboração entre o público em geral (pessoas que não são cientistas de profissão) e investigadores profissionais para gerar conhecimento científico.
+
+Pode ser resumida em três pilares:
+Participação Ativa: O cidadão não é apenas um espetador, mas ajuda a recolher dados, analisar resultados ou formular perguntas.
+Democratização: Torna a ciência mais acessível, transparente e próxima das necessidades reais da sociedade.
+Impacto Real: Os dados recolhidos por milhares de voluntários permitem estudos em larga escala que seriam impossíveis de realizar apenas por equipas de laboratório.
+
+Projetos de Ciência Aberta em Portugal: 
+Plataforma loboiberico.pt
+FITCount
+
+A palataforma loboiberico.pt é uma aplicação para telemóvel que permite aos cidadãos registar observações de lobos-ibéricos ou das suas presas, ajudando na conservação da espécie.
+O projeto FITcount é um projeto para monitorizar insetos polinizadores através de uma aplicação móvel, utilizando uma metodologia simples de contagem em flores.

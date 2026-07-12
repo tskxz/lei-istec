@@ -1,0 +1,39 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace influencer2022189.Models
+{
+    public class Comentario
+    {
+        private Guid _id;
+        private string _texto;
+        private DateTime _dataComentario;
+        private Comentador _comentador;
+
+        public void setTexto(string texto)
+        {
+            _texto = texto.Trim();
+            if (texto.Length == 0) { 
+                _texto = "Sem comentário";
+            }
+        }
+
+        public string getTexto() { return _texto; }
+        public DateTime getDataComentario() { return _dataComentario; }
+        public void setComentador(Comentador comentador)
+        {
+            _comentador = comentador;
+        }
+        public Comentador getComentador() { return _comentador; }
+
+        public Guid getId() { return _id; }
+        public Comentario()
+        {
+            _id = Guid.NewGuid();
+            setTexto("");
+            _dataComentario = DateTime.Now;
+        }
+
+    }
+}

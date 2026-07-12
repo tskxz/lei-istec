@@ -1,0 +1,15 @@
+C:\Users\tanjil\Documents\LEI1-istec\P-II\DemoHeranca\DemoHeranca\bin\Debug\net10.0\DemoHeranca.exe
+C:\Users\tanjil\Documents\LEI1-istec\P-II\DemoHeranca\DemoHeranca\bin\Debug\net10.0\DemoHeranca.deps.json
+C:\Users\tanjil\Documents\LEI1-istec\P-II\DemoHeranca\DemoHeranca\bin\Debug\net10.0\DemoHeranca.runtimeconfig.json
+C:\Users\tanjil\Documents\LEI1-istec\P-II\DemoHeranca\DemoHeranca\bin\Debug\net10.0\DemoHeranca.dll
+C:\Users\tanjil\Documents\LEI1-istec\P-II\DemoHeranca\DemoHeranca\bin\Debug\net10.0\DemoHeranca.pdb
+C:\Users\tanjil\Documents\LEI1-istec\P-II\DemoHeranca\DemoHeranca\obj\Debug\net10.0\DemoHeranca.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tanjil\Documents\LEI1-istec\P-II\DemoHeranca\DemoHeranca\obj\Debug\net10.0\DemoHeranca.AssemblyInfoInputs.cache
+C:\Users\tanjil\Documents\LEI1-istec\P-II\DemoHeranca\DemoHeranca\obj\Debug\net10.0\DemoHeranca.AssemblyInfo.cs
+C:\Users\tanjil\Documents\LEI1-istec\P-II\DemoHeranca\DemoHeranca\obj\Debug\net10.0\DemoHeranca.csproj.CoreCompileInputs.cache
+C:\Users\tanjil\Documents\LEI1-istec\P-II\DemoHeranca\DemoHeranca\obj\Debug\net10.0\DemoHeranca.sourcelink.json
+C:\Users\tanjil\Documents\LEI1-istec\P-II\DemoHeranca\DemoHeranca\obj\Debug\net10.0\DemoHeranca.dll
+C:\Users\tanjil\Documents\LEI1-istec\P-II\DemoHeranca\DemoHeranca\obj\Debug\net10.0\refint\DemoHeranca.dll
+C:\Users\tanjil\Documents\LEI1-istec\P-II\DemoHeranca\DemoHeranca\obj\Debug\net10.0\DemoHeranca.pdb
+C:\Users\tanjil\Documents\LEI1-istec\P-II\DemoHeranca\DemoHeranca\obj\Debug\net10.0\DemoHeranca.genruntimeconfig.cache
+C:\Users\tanjil\Documents\LEI1-istec\P-II\DemoHeranca\DemoHeranca\obj\Debug\net10.0\ref\DemoHeranca.dll

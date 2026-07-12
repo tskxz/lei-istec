@@ -1,1 +1,0 @@
-xr x (Yr + Yr_anterior)

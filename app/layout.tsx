@@ -1,0 +1,26 @@
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+export const metadata: Metadata = {
+  title: "ISTEC Conteúdos",
+  description: "Todos os trabalhos, estudos e projetos feitos no ISTEC organizados numa navegação simples de ficheiros.",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en" className={`${inter.variable} h-full antialiased`}>
+      <body className="min-h-full flex flex-col font-sans">{children}</body>
+    </html>
+  );
+}

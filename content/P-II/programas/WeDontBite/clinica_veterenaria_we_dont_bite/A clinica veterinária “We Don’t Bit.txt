@@ -1,0 +1,32 @@
+A clinica veterinária “We Don’t Bite Pets” pretende criar uma aplicação que possa gerir as consultas efetuadas aos animais. Para o efeito, o modelo de negócio é o seguinte:
+
+Uma consulta é dada por um veterinário a um animal de estimação, durante a qual é feito um diagnóstico e aplicados tratamentos sempre que necessário.
+
+Um animal de estimação tem sempre um dono. No entanto, dado que a clínica tem um código de conduta a respeitar e ética profissional séria, também pode consultar/tratar animais abandonados. Nestas circunstâncias, o dono é “John Doe” e tem email vazio  e nif = “---------“. Neste caso, a fatura apesar de emitida, terá como cliente o tal “John Doe”
+
+Os tratamentos – caso existam – são sempre aplicados pelo próprio veterinário durante a consulta. Cada tratamento terá um custo associado (distinto para cada tratamento), bem como a própria consulta, a qual terá sempre um custo fixo de 50 €.
+
+A fatura será sempre emitida após o fecho da consulta, e o valor a debitar será o somatório dos tratamentos adicionado do valor da consulta.
+
+1)	Criar o DC que contextualize o cenário proposto, o mais coerente e escalável possível, indicando quais os atributos decorrentes das relações estabelecidas bem como outros atributos pertinentes
+
+2)	Converter o DC numa solução O.O. em Console
+
+3)	Simular o comportamento da solução, criando:
+
+a.	2 animais: O gato Xico e o papagaio Pirata
+
+b.	2 consultas, 1 para cada pet
+
+c.	1 veterinário, o Felisberto Curapets
+
+d.	2 donos: A Maria (dona do Xico) e o Jack Sparrow, dono do Pirata
+
+e.	3 tratamentos: limpeza de carraças (10€); cortar unhas (5 €); anelar a pata (15 €)
+
+f.	O Xico vai ao veterinário para limpeza de carraças e cortar unhas
+
+g.	O Pirata vai para ser anelado.
+
+4)	Ao solicitar à clinica toda a sua atividade, devo poder listar todos os pontos simulados acima
+

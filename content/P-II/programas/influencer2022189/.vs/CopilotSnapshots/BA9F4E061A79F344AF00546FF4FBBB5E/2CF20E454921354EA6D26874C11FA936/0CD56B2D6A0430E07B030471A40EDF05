@@ -1,0 +1,45 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace influencer2022189.Models
+{
+    public class Opiniao
+    {
+        private Guid _id;
+        private string _titulo;
+        private string _resumo;
+        private DateTime _dataComentario;
+        private List<Comentario> _lstComentarios;
+
+        public Guid getId() { return _id; }
+        public void setTitulo(string titulo)
+        {
+            _titulo = titulo;
+            if(_titulo.Length == 0) {
+                _titulo = "Sem título";
+            }
+        }
+
+        public string getTitulo () { return _titulo; }
+        public void setResumo(string resumo)
+        {
+            _resumo = resumo;
+            if (_resumo.Length == 0)
+            {
+                _resumo = "Sem Descritivo";
+            }
+        }
+
+        public DateTime getDataComentario() { return _dataComentario; }
+
+        public Opiniao ()
+        {
+            _id = Guid.NewGuid();
+            setTitulo("");
+            setResumo("");
+            _dataComentario = DateTime.Now;
+            _lstComentarios = new List<Comentario>();
+        }
+    }
+}

@@ -1,0 +1,57 @@
+
+**PARTE I – 12 perguntas sobre CENÁRIOS / Situações Problemas**
+**(Cada pergunta vale 1 valor. Cotação da Parte I - 12 valores)**
+
+**1. Conceitos fundamentais de Ciência, Técnica e Tecnologia**
+Com base no livro "O Que é Ciência?", identifique o autor da obra e explique, de forma sucinta, os conceitos de ciência, técnica e tecnologia segundo a sua perspetiva.
+
+**2. Grandes etapas do progresso tecnológico da Humanidade**
+Com base nas obras de David Carvalho ("Inteligência Artificial para Todos") e Klaus Schwab ("A Quarta Revolução Industrial"), identifique e caracterize as principais tecnologias que marcaram as grandes etapas da evolução da Humanidade, justificando a sua relevância histórica.
+
+**3. Evolução histórica da Inteligência Artificial**
+Com base no Capítulo VI da obra "Inteligência Artificial para Todos", de David Carvalho, descreva a evolução da Inteligência Artificial, destacando os principais marcos históricos, o estado atual da tecnologia e os seus desafios futuros.
+
+**4. Paradigmas da Ciência**
+Com base na obra "O Paradigma Bioético", de Gilbert Hottois, indique os três principais paradigmas da ciência. Para cada paradigma, apresente:
+a) o período histórico;
+b) as principais características;
+c) pelo menos três cientistas ou pensadores representativos de cada um dos paradigmas.
+
+**5. Correntes filosóficas da teoria do conhecimento**
+Identifique seis correntes filosóficas que contribuíram para o desenvolvimento do conhecimento científico. Para cada corrente, indique duas figuras representativas e a sua principal contribuição.
+
+**6. Conceitos fundamentais da evolução científica**
+Distinga claramente os seguintes conceitos:
+
+* Paradigma científico;
+* Ciência normal;
+* Revolução científica;
+* Etapa do progresso técnico.
+
+Apresente uma definição breve para cada conceito.
+
+**7. Karl Popper e Thomas Kuhn**
+Compare as perspetivas de Karl Popper e Thomas Kuhn sobre a evolução do conhecimento científico. Explique os principais pontos de divergência entre os autores e *ilustre a resposta com exemplos históricos*.
+
+**8. Cenário 6 – "A Transformação da Unidade de Produção EcoLogística" Transição da Indústria 4.0 para a Indústria 5.0 aplicando a IA na gestão sustentável de recursos.**
+A empresa **EcoLogística** enfrenta elevados níveis de desperdício de matérias-primas raras. Explique de que forma a Inteligência Artificial pode contribuir para minimizar esse desperdício, indicando pelo menos três aplicações concretas.
+
+**9. Cenário 7.1 – "Empresa de entrega com drones autónomos numa cidade inteligente"**
+Identifique *cinco* tecnologias digitais emergentes presentes num sistema de entregas com drones autónomos, e como futuro engenheiro analise o sistema explicando o papel de cada uma das tecnologias e a sua importância para o funcionamento do sistema.
+
+**10. Cenário 8 – Parte Teórica "Estratégias industriais focadas na mitigação das alterações climáticas e na economia circular através da gestão do dióxido de carbono"**
+Construa uma tabela comparativa entre as tecnologias: **CCS** - Carbon Capture and Storage; **CCU** - Carbon Capture and Utilization; **CCUS**; **DAC** - Direct Air Capture; **DACCS** - Direct Air Carbon Capture and Storage; **DOC** - Direct Ocean Capture; **BECCS** - Bioenergy with Carbon Capture and Storage, indicando para cada uma:
+
+* Objetivo principal;
+* Local de aplicação;
+* Vantagens;
+* Limitações.
+
+**11. Cenário 8 – Parte Prática – "A empresa fictícia EcoMetal, localizada na zona industrial de Setúbal, produz peças metálicas para a indústria automóvel. A fábrica funciona 24 horas por dia e utiliza máquinas de corte, fornos industriais e sistemas de transporte automatizados"**
+Sabendo que a empresa EcoMetal apresenta emissões de CO₂ superiores às metas ambientais da União Europeia. Proponha medidas tecnológicas e organizacionais que permitam reduzir a pegada carbónica da empresa e aumentar a sua sustentabilidade.
+
+**12. Cenário 1 – Inteligência Artificial na Administração Pública**
+Uma autarquia portuguesa decide implementar um sistema de Inteligência Artificial para apoiar decisões administrativas, nomeadamente na atribuição de apoios sociais, na identificação de situações de risco de abandono escolar e na gestão de recursos municipais. Perante esta iniciativa, o Presidente da Câmara afirma:
+*"A tecnologia é objetiva e neutra. O algoritmo decide com base em dados e não em opiniões."*
+
+Comente criticamente esta afirmação, fundamentando a sua resposta referindo pelo menos três vantagens e três riscos da utilização de sistemas de IA na Administração Pública.

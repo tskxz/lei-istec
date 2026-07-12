@@ -1,0 +1,15 @@
+C:\Users\tanjil\Documents\LEI1-istec\P-II\DC\WeDontBite\WeDontBite\bin\Debug\net10.0\WeDontBite.exe
+C:\Users\tanjil\Documents\LEI1-istec\P-II\DC\WeDontBite\WeDontBite\bin\Debug\net10.0\WeDontBite.deps.json
+C:\Users\tanjil\Documents\LEI1-istec\P-II\DC\WeDontBite\WeDontBite\bin\Debug\net10.0\WeDontBite.runtimeconfig.json
+C:\Users\tanjil\Documents\LEI1-istec\P-II\DC\WeDontBite\WeDontBite\bin\Debug\net10.0\WeDontBite.dll
+C:\Users\tanjil\Documents\LEI1-istec\P-II\DC\WeDontBite\WeDontBite\bin\Debug\net10.0\WeDontBite.pdb
+C:\Users\tanjil\Documents\LEI1-istec\P-II\DC\WeDontBite\WeDontBite\obj\Debug\net10.0\WeDontBite.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tanjil\Documents\LEI1-istec\P-II\DC\WeDontBite\WeDontBite\obj\Debug\net10.0\WeDontBite.AssemblyInfoInputs.cache
+C:\Users\tanjil\Documents\LEI1-istec\P-II\DC\WeDontBite\WeDontBite\obj\Debug\net10.0\WeDontBite.AssemblyInfo.cs
+C:\Users\tanjil\Documents\LEI1-istec\P-II\DC\WeDontBite\WeDontBite\obj\Debug\net10.0\WeDontBite.csproj.CoreCompileInputs.cache
+C:\Users\tanjil\Documents\LEI1-istec\P-II\DC\WeDontBite\WeDontBite\obj\Debug\net10.0\WeDontBite.sourcelink.json
+C:\Users\tanjil\Documents\LEI1-istec\P-II\DC\WeDontBite\WeDontBite\obj\Debug\net10.0\WeDontBite.dll
+C:\Users\tanjil\Documents\LEI1-istec\P-II\DC\WeDontBite\WeDontBite\obj\Debug\net10.0\refint\WeDontBite.dll
+C:\Users\tanjil\Documents\LEI1-istec\P-II\DC\WeDontBite\WeDontBite\obj\Debug\net10.0\WeDontBite.pdb
+C:\Users\tanjil\Documents\LEI1-istec\P-II\DC\WeDontBite\WeDontBite\obj\Debug\net10.0\WeDontBite.genruntimeconfig.cache
+C:\Users\tanjil\Documents\LEI1-istec\P-II\DC\WeDontBite\WeDontBite\obj\Debug\net10.0\ref\WeDontBite.dll

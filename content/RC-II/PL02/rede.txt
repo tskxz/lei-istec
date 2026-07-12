@@ -1,0 +1,43 @@
+VLAN 192.168.0.0/24
+
+Rede B
+172.25.0.0/16
+255.255.0.0
+
+Rede A
+10.10.22.128/25
+255.255.255.128
+
+Rede C
+192.168.10.0/25
+255.255.255.128
+
+enable
+router > enable
+router # configure terminal
+router(config)#
+
+interface fa 0/0
+ip address 10.10.22.129 255.255.255.255.128
+no shutdown
+
+vlan
+enable
+configure t
+int gi 0/0
+ip address 192.168.10.1 255.255.255.128
+no shut
+exit
+
+vlan
+enable
+configure t
+int gi 0/0
+ip address 172.29.0.1 255.255.0.0
+no shut
+exit
+
+
+int serial 0/0/0
+ip address 192.168.0.1 255.255.255.255 (252)
+no shutdown
