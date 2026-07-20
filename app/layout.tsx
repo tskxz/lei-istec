@@ -9,8 +9,12 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "ISTEC Conteúdos",
-  description: "Todos os trabalhos, estudos e projetos feitos no ISTEC organizados numa navegação simples de ficheiros.",
+  title: "ISTEC · Conteúdos LEI",
+  description: "Explorador interativo de trabalhos, estudos e projetos da Licenciatura em Engenharia Informática do ISTEC.",
+};
+
+export const viewport = {
+  themeColor: "#060a12",
 };
 
 export default function RootLayout({
@@ -19,8 +23,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col font-sans">{children}</body>
+    <html lang="pt" className={`${inter.variable} h-full antialiased`}>
+      <body className="min-h-full flex flex-col bg-background font-sans">{children}</body>
     </html>
   );
 }

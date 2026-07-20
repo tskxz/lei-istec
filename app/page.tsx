@@ -1,12 +1,7 @@
 import fs from "fs";
 import path from "path";
-
-interface TreeNode {
-  name: string;
-  pathSegments: string[];
-  isDirectory: boolean;
-  children?: TreeNode[];
-}
+import { GraduationCap, Sparkles } from "lucide-react";
+import { FileExplorer, type TreeNode } from "@/components/file-explorer";
 
 function buildDirectoryTree(pathSegments: string[] = []): TreeNode {
   const root = path.join(process.cwd(), "content");
@@ -52,59 +47,58 @@ function buildDirectoryTree(pathSegments: string[] = []): TreeNode {
   };
 }
 
-const fileLinkHref = (pathSegments: string[]) => `/files/${pathSegments.map(encodeURIComponent).join("/")}`;
-
-function renderTree(node: TreeNode) {
-  if (!node.children || node.children.length === 0) {
-    return null;
-  }
-
-  return (
-    <ul className="ml-4 space-y-2">
-      {node.children.map((child) => (
-        <li key={child.pathSegments.join("/")}> 
-          {child.isDirectory ? (
-            <details className="group rounded-lg border border-slate-800 bg-slate-900/90 p-3 transition hover:border-slate-600">
-              <summary className="cursor-pointer text-sm font-medium text-slate-100">
-                <span className="mr-2">📁</span> {child.name}
-              </summary>
-              {renderTree(child)}
-            </details>
-          ) : (
-            <div className="rounded-lg border border-slate-800 bg-slate-900/90 px-4 py-3 text-slate-100 transition hover:border-slate-600 hover:bg-slate-900/95">
-              <a
-                href={fileLinkHref(child.pathSegments)}
-                target="_blank"
-                rel="noreferrer"
-                className="block w-full text-left text-sm font-medium text-slate-100 transition hover:text-white hover:underline"
-                title="Abrir em nova aba"
-              >
-                📄 {child.name}
-              </a>
-            </div>
-          )}
-        </li>
-      ))}
-    </ul>
-  );
-}
-
 export default function Home() {
   const rootTree = buildDirectoryTree([]);
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100">
-      <main className="mx-auto flex w-full max-w-4xl flex-col gap-5 px-6 py-10 sm:px-8">
-        <section className="space-y-3 bg-slate-950/90 p-4">
-          <p className="text-xs uppercase tracking-[0.3em] text-slate-500">ISTEC - Licenciatura Engenharia Informática</p>
-          <p className="text-base leading-7 text-slate-300">
-            Todos os trabalhos, estudos e projetos de cada UC feitos por mim, conteúdos e slides de aprendizem feitos dentro do ISTEC guardados aqui.
-          </p>
-        </section>
+    <div className="relative min-h-screen overflow-hidden bg-background text-foreground">
+      {/* Animated aurora background */}
+      <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden>
+        <div className="aurora-blob absolute -left-20 -top-24 size-[28rem] rounded-full bg-primary/20 blur-[100px]" />
+        <div
+          className="aurora-blob absolute -right-24 top-40 size-[26rem] rounded-full bg-accent/20 blur-[110px]"
+          style={{ animationDelay: "4s" }}
+        />
+        <div
+          className="absolute inset-0 opacity-[0.35]"
+          style={{
+            backgroundImage:
+              "linear-gradient(to right, rgba(148,163,184,0.06) 1px, transparent 1px), linear-gradient(to bottom, rgba(148,163,184,0.06) 1px, transparent 1px)",
+            backgroundSize: "42px 42px",
+          }}
+        />
+      </div>
 
-        <section className="space-y-4 bg-slate-950/90 p-4">
-          <div>{renderTree(rootTree)}</div>
-        </section>
+      <main className="relative mx-auto flex w-full max-w-5xl flex-col gap-10 px-5 py-14 sm:px-8">
+        {/* Hero */}
+        <header className="animate-fade-up flex flex-col gap-5">
+          <span className="inline-flex w-fit items-center gap-2 rounded-full border border-border bg-card/70 px-3.5 py-1.5 text-xs font-medium text-muted-foreground backdrop-blur">
+            <Sparkles className="size-3.5 text-primary" />
+            ISTEC · Licenciatura em Engenharia Informática
+          </span>
+
+          <div className="flex items-start gap-4">
+            <div className="hidden size-14 shrink-0 items-center justify-center rounded-2xl bg-primary/10 text-primary sm:flex">
+              <GraduationCap className="size-7" />
+            </div>
+            <div>
+              <h1 className="text-pretty text-4xl font-bold tracking-tight sm:text-5xl">
+                Os meus <span className="text-primary">conteúdos</span> do curso
+              </h1>
+              <p className="mt-3 max-w-2xl text-pretty text-base leading-relaxed text-muted-foreground">
+                Todos os trabalhos, estudos e projetos de cada UC feitos por mim — slides, apontamentos e
+                material de aprendizagem do ISTEC, organizados num explorador de ficheiros interativo.
+              </p>
+            </div>
+          </div>
+        </header>
+
+        {/* Interactive explorer */}
+        <FileExplorer tree={rootTree} />
+
+        <footer className="mt-4 border-t border-border pt-6 text-center text-xs text-muted-foreground">
+          Feito com dedicação · Engenharia Informática · ISTEC
+        </footer>
       </main>
     </div>
   );
