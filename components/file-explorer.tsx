@@ -41,6 +41,12 @@ const SUBJECTS: Record<string, SubjectMeta> = {
   projetos: { label: "Projetos", description: "Trabalhos e projetos pessoais" },
 };
 
+const PROJECT_REPOS: Record<string, { repoUrl: string }> = {
+  "andante-sys": { repoUrl: "https://github.com/tskxz/andante-sys" },
+  "hct-web": { repoUrl: "https://github.com/tskxz/hct-web" },
+  matrix: { repoUrl: "https://github.com/tskxz/matrix" },
+};
+
 function fileHref(pathSegments: string[]) {
   return `/files/${pathSegments.map(encodeURIComponent).join("/")}`;
 }
@@ -91,8 +97,9 @@ function TreeItem({
   depth: number;
   forceOpen: boolean;
 }) {
-  const [open, setOpen] = useState(depth < 1);
+  const [open, setOpen] = useState(false);
   const isOpen = forceOpen || open;
+  const projectRepo = PROJECT_REPOS[node.name];
 
   if (!node.isDirectory) {
     return (
@@ -129,9 +136,23 @@ function TreeItem({
           <Folder className="size-4 shrink-0 text-muted-foreground group-hover:text-foreground" />
         )}
         <span className="truncate">{node.name}</span>
-        <span className="ml-auto rounded-md border border-border/40 bg-muted/50 px-2 py-0.5 font-mono text-[11px] font-normal text-muted-foreground">
-          {countFiles(node)}
-        </span>
+        {projectRepo ? (
+          <a
+            href={projectRepo.repoUrl}
+            target="_blank"
+            rel="noreferrer"
+            onClick={(e) => e.stopPropagation()}
+            className="ml-auto flex items-center gap-1 rounded border border-border bg-muted px-2 py-0.5 text-xs text-primary transition-colors hover:bg-primary hover:text-primary-foreground"
+            title={`Abrir repositório ${node.name} no GitHub`}
+          >
+            <span>Repositório</span>
+            <ExternalLink className="size-3" />
+          </a>
+        ) : (
+          <span className="ml-auto rounded-md border border-border/40 bg-muted/50 px-2 py-0.5 font-mono text-[11px] font-normal text-muted-foreground">
+            {countFiles(node)}
+          </span>
+        )}
       </button>
       {isOpen && node.children && node.children.length > 0 && (
         <div className="animate-reveal border-l border-border/60" style={{ marginLeft: `${depth * 14 + 13}px` }}>
