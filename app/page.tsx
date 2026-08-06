@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import { GraduationCap, Sparkles } from "lucide-react";
+import { GraduationCap } from "lucide-react";
 import { FileExplorer, type TreeNode } from "@/components/file-explorer";
 
 function buildDirectoryTree(pathSegments: string[] = []): TreeNode {
@@ -54,24 +54,17 @@ export default function Home() {
     <div className="min-h-screen bg-background text-foreground">
       <main className="mx-auto flex w-full max-w-5xl flex-col gap-8 px-5 py-12 sm:px-8">
         {/* Hero Header */}
-        <header className="animate-fade-up flex flex-col gap-4">
-          <div className="inline-flex w-fit items-center gap-2 rounded-md border border-border bg-card px-3 py-1 text-xs font-medium text-muted-foreground">
-            <Sparkles className="size-3.5 text-primary" />
-            <span>ISTEC · Licenciatura em Engenharia Informática</span>
+        <header className="animate-fade-up flex items-start gap-4">
+          <div className="hidden size-12 shrink-0 items-center justify-center rounded-xl border border-border bg-card text-primary sm:flex">
+            <GraduationCap className="size-6" />
           </div>
-
-          <div className="flex items-start gap-4">
-            <div className="hidden size-12 shrink-0 items-center justify-center rounded-xl border border-border bg-card text-primary sm:flex">
-              <GraduationCap className="size-6" />
-            </div>
-            <div>
-              <h1 className="text-balance text-3xl font-semibold tracking-tight sm:text-4xl text-foreground">
-                Os meus conteúdos do curso
-              </h1>
-              <p className="mt-2 max-w-2xl text-pretty text-sm leading-relaxed text-muted-foreground sm:text-base">
-                Trabalhos, apontamentos e projetos de cada unidade curricular do ISTEC organizados num explorador de ficheiros simples, limpo e direto.
-              </p>
-            </div>
+          <div>
+            <h1 className="text-balance text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+              Conteúdos do Curso
+            </h1>
+            <p className="mt-2 max-w-2xl text-pretty text-sm leading-relaxed text-muted-foreground sm:text-base">
+              Trabalhos, apontamentos e projetos das disciplinas da Licenciatura em Engenharia Informática do ISTEC.
+            </p>
           </div>
         </header>
 
