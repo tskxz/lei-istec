@@ -51,43 +51,25 @@ export default function Home() {
   const rootTree = buildDirectoryTree([]);
 
   return (
-    <div className="relative min-h-screen overflow-hidden bg-background text-foreground">
-      {/* Animated aurora background */}
-      <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden>
-        <div className="aurora-blob absolute -left-20 -top-24 size-[28rem] rounded-full bg-primary/20 blur-[100px]" />
-        <div
-          className="aurora-blob absolute -right-24 top-40 size-[26rem] rounded-full bg-accent/20 blur-[110px]"
-          style={{ animationDelay: "4s" }}
-        />
-        <div
-          className="absolute inset-0 opacity-[0.35]"
-          style={{
-            backgroundImage:
-              "linear-gradient(to right, rgba(148,163,184,0.06) 1px, transparent 1px), linear-gradient(to bottom, rgba(148,163,184,0.06) 1px, transparent 1px)",
-            backgroundSize: "42px 42px",
-          }}
-        />
-      </div>
-
-      <main className="relative mx-auto flex w-full max-w-5xl flex-col gap-10 px-5 py-14 sm:px-8">
-        {/* Hero */}
-        <header className="animate-fade-up flex flex-col gap-5">
-          <span className="inline-flex w-fit items-center gap-2 rounded-full border border-border bg-card/70 px-3.5 py-1.5 text-xs font-medium text-muted-foreground backdrop-blur">
+    <div className="min-h-screen bg-background text-foreground">
+      <main className="mx-auto flex w-full max-w-5xl flex-col gap-8 px-5 py-12 sm:px-8">
+        {/* Hero Header */}
+        <header className="animate-fade-up flex flex-col gap-4">
+          <div className="inline-flex w-fit items-center gap-2 rounded-md border border-border bg-card px-3 py-1 text-xs font-medium text-muted-foreground">
             <Sparkles className="size-3.5 text-primary" />
-            ISTEC · Licenciatura em Engenharia Informática
-          </span>
+            <span>ISTEC · Licenciatura em Engenharia Informática</span>
+          </div>
 
           <div className="flex items-start gap-4">
-            <div className="hidden size-14 shrink-0 items-center justify-center rounded-2xl bg-primary/10 text-primary sm:flex">
-              <GraduationCap className="size-7" />
+            <div className="hidden size-12 shrink-0 items-center justify-center rounded-xl border border-border bg-card text-primary sm:flex">
+              <GraduationCap className="size-6" />
             </div>
             <div>
-              <h1 className="text-pretty text-4xl font-bold tracking-tight sm:text-5xl">
-                Os meus <span className="text-primary">conteúdos</span> do curso
+              <h1 className="text-balance text-3xl font-semibold tracking-tight sm:text-4xl text-foreground">
+                Os meus conteúdos do curso
               </h1>
-              <p className="mt-3 max-w-2xl text-pretty text-base leading-relaxed text-muted-foreground">
-                Todos os trabalhos, estudos e projetos de cada UC feitos por mim — slides, apontamentos e
-                material de aprendizagem do ISTEC, organizados num explorador de ficheiros interativo.
+              <p className="mt-2 max-w-2xl text-pretty text-sm leading-relaxed text-muted-foreground sm:text-base">
+                Trabalhos, apontamentos e projetos de cada unidade curricular do ISTEC organizados num explorador de ficheiros simples, limpo e direto.
               </p>
             </div>
           </div>
@@ -96,8 +78,8 @@ export default function Home() {
         {/* Interactive explorer */}
         <FileExplorer tree={rootTree} />
 
-        <footer className="mt-4 border-t border-border pt-6 text-center text-xs text-muted-foreground">
-          Feito com dedicação · Engenharia Informática · ISTEC
+        <footer className="mt-6 border-t border-border pt-6 text-center text-xs text-muted-foreground">
+          Engenharia Informática · ISTEC
         </footer>
       </main>
     </div>

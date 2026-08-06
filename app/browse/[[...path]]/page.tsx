@@ -65,30 +65,30 @@ function renderTree(node: TreeNode) {
   if (!node.children || node.children.length === 0) {
     return (
       <ul className="ml-4 space-y-2">
-        <li className="text-slate-500 dark:text-slate-400">(vazio)</li>
+        <li className="text-sm text-muted-foreground">(vazio)</li>
       </ul>
     );
   }
 
   return (
-    <ul className="mt-2 space-y-2 text-sm text-slate-800 dark:text-slate-200">
+    <ul className="mt-2 space-y-2 text-sm text-foreground">
       {node.children.map((child) => (
-        <li key={child.pathSegments.join("/")}> 
+        <li key={child.pathSegments.join("/")}>
           {child.isDirectory ? (
-            <details className="rounded-2xl border border-slate-200 bg-slate-50 p-3 shadow-sm dark:border-slate-700 dark:bg-slate-950" open>
-              <summary className="cursor-pointer font-medium text-slate-900 dark:text-slate-100">
+            <details className="rounded-xl border border-border bg-muted/40 p-3" open>
+              <summary className="cursor-pointer font-medium text-foreground">
                 📁 {child.name}
               </summary>
               {renderTree(child)}
             </details>
           ) : (
-            <div className="flex items-center justify-between rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 dark:border-slate-700 dark:bg-slate-950">
+            <div className="flex items-center justify-between rounded-xl border border-border bg-card px-4 py-3">
               <span>📄 {child.name}</span>
               <a
                 href={getFileHref(child.pathSegments)}
                 target="_blank"
                 rel="noreferrer"
-                className="text-sm font-medium text-slate-700 hover:text-slate-900 dark:text-slate-300 dark:hover:text-slate-100"
+                className="text-xs font-medium text-primary hover:underline"
                 {...(path.extname(child.name).toLowerCase() === ".zip" ? { download: child.name } : {})}
               >
                 Abrir
@@ -106,28 +106,27 @@ export default function BrowsePage({ params }: BrowsePageProps) {
   const tree = getDirectoryTree(pathSegments);
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100">
-      <main className="mx-auto flex w-full max-w-6xl flex-col gap-8 px-6 py-10 sm:px-8">
-        <section className="rounded-3xl border border-slate-200 bg-white/90 p-8 shadow-sm shadow-slate-200/40 dark:border-slate-700 dark:bg-slate-900/95 dark:shadow-black/10">
+    <div className="min-h-screen bg-background text-foreground">
+      <main className="mx-auto flex w-full max-w-5xl flex-col gap-6 px-5 py-10 sm:px-8">
+        <section className="rounded-xl border border-border bg-card p-6">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <div>
-              <h1 className="text-3xl font-semibold">Navegador de Conteúdos ISTEC</h1>
-              <p className="mt-2 text-base leading-7 text-slate-600 dark:text-slate-300">
-                Árvore de pastas e ficheiros dentro de <code className="rounded bg-slate-100 px-1.5 py-0.5 text-sm text-slate-800 dark:bg-slate-800 dark:text-slate-200">content</code>.
-                Clique em ficheiros para abrir imagens/PDFs e em ZIP para descarregar.
+              <h1 className="text-2xl font-semibold text-foreground">Navegador de Conteúdos ISTEC</h1>
+              <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
+                Árvore de pastas e ficheiros dentro de <code className="rounded border border-border bg-muted px-1.5 py-0.5 font-mono text-xs text-foreground">content</code>.
               </p>
             </div>
             <Link
               href="/"
-              className="rounded-full border border-slate-200 bg-slate-100 px-4 py-2 text-sm font-medium text-slate-900 transition hover:bg-slate-200 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-100 dark:hover:bg-slate-700"
+              className="rounded-lg border border-border bg-muted/60 px-3.5 py-1.5 text-xs font-medium text-foreground transition-colors hover:bg-muted"
             >
               Voltar ao início
             </Link>
           </div>
         </section>
 
-        <section className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm shadow-slate-200/40 dark:border-slate-700 dark:bg-slate-900/95 dark:shadow-black/10">
-          <h2 className="text-2xl font-semibold text-slate-900 dark:text-slate-100">Árvore de ficheiros</h2>
+        <section className="rounded-xl border border-border bg-card p-6">
+          <h2 className="text-xl font-semibold text-foreground">Árvore de ficheiros</h2>
           <div className="mt-4">{renderTree(tree)}</div>
         </section>
       </main>

@@ -1,23 +1,23 @@
 @import "tailwindcss";
 
 :root {
-  --background: #060a12;
-  --foreground: #e6edf6;
+  --background: #090a0f;
+  --foreground: #f1f5f9;
 
-  --card: #0d1420;
-  --card-foreground: #e6edf6;
+  --card: #11141d;
+  --card-foreground: #f1f5f9;
 
-  --muted: #131c2b;
-  --muted-foreground: #8ba0b8;
+  --muted: #181c27;
+  --muted-foreground: #94a3b8;
 
-  --border: #1e2a3d;
+  --border: #232838;
 
-  --primary: #22d3ee;
-  --primary-foreground: #04121a;
+  --primary: #38bdf8;
+  --primary-foreground: #090a0f;
 
-  --accent: #38bdf8;
+  --accent: #0284c7;
 
-  --radius: 0.9rem;
+  --radius: 0.75rem;
 }
 
 @theme inline {
@@ -35,8 +35,8 @@
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
 
   --radius-lg: var(--radius);
-  --radius-md: calc(var(--radius) - 0.25rem);
-  --radius-sm: calc(var(--radius) - 0.5rem);
+  --radius-md: calc(var(--radius) - 0.2rem);
+  --radius-sm: calc(var(--radius) - 0.4rem);
 }
 
 body {
@@ -45,28 +45,10 @@ body {
   font-family: var(--font-sans);
 }
 
-/* Animated aurora background */
-@keyframes aurora-drift {
-  0%,
-  100% {
-    transform: translate3d(0, 0, 0) scale(1);
-    opacity: 0.55;
-  }
-  50% {
-    transform: translate3d(4%, -3%, 0) scale(1.15);
-    opacity: 0.8;
-  }
-}
-
-.aurora-blob {
-  animation: aurora-drift 16s ease-in-out infinite;
-  will-change: transform, opacity;
-}
-
 @keyframes fade-up {
   from {
     opacity: 0;
-    transform: translateY(12px);
+    transform: translateY(8px);
   }
   to {
     opacity: 1;
@@ -75,14 +57,13 @@ body {
 }
 
 .animate-fade-up {
-  animation: fade-up 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation: fade-up 0.4s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
-/* Smooth expand for tree rows */
 @keyframes reveal {
   from {
     opacity: 0;
-    transform: translateY(-4px);
+    transform: translateY(-2px);
   }
   to {
     opacity: 1;
@@ -91,11 +72,10 @@ body {
 }
 
 .animate-reveal {
-  animation: reveal 0.25s ease-out both;
+  animation: reveal 0.2s ease-out both;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .aurora-blob,
   .animate-fade-up,
   .animate-reveal {
     animation: none;
@@ -104,8 +84,8 @@ body {
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
 }
 ::-webkit-scrollbar-track {
   background: transparent;
@@ -116,5 +96,6 @@ body {
   border: 2px solid var(--background);
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #2c3d56;
+  background: #33394b;
 }
+
