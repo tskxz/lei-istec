@@ -228,7 +228,7 @@ export function FileExplorer({ tree }: { tree: TreeNode }) {
       </div>
 
       {/* Subject cards */}
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 items-start">
+      <div className="grid gap-4 lg:grid-cols-2">
         {visibleSubjects.length === 0 && (
           <div className="col-span-full rounded-xl border border-border bg-card p-10 text-center text-muted-foreground">
             Nenhum resultado para <span className="text-foreground">&quot;{query}&quot;</span>.
@@ -257,7 +257,7 @@ export function FileExplorer({ tree }: { tree: TreeNode }) {
                 </div>
               </header>
 
-              <div className="max-h-64 overflow-y-auto pr-1">
+              <div className="max-h-80 overflow-y-auto pr-1">
                 {subject.children && subject.children.length > 0 ? (
                   subject.children.map((child) => (
                     <TreeItem
