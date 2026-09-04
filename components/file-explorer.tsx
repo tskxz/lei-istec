@@ -14,7 +14,6 @@ import {
   File as FileIcon,
   ExternalLink,
   X,
-  Layers,
 } from "lucide-react";
 
 export interface TreeNode {
@@ -175,7 +174,6 @@ export function FileExplorer({ tree }: { tree: TreeNode }) {
   const [active, setActive] = useState<string | null>(null);
 
   const subjects = tree.children ?? [];
-  const totalFiles = useMemo(() => countFiles(tree), [tree]);
 
   const visibleSubjects = useMemo(() => {
     const base = active ? subjects.filter((s) => s.name === active) : subjects;
@@ -187,14 +185,6 @@ export function FileExplorer({ tree }: { tree: TreeNode }) {
 
   return (
     <div className="flex flex-col gap-6">
-      {/* Stats bar */}
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-        <StatCard icon={<Layers className="size-4" />} label="Disciplinas" value={subjects.length} />
-        <StatCard icon={<Folder className="size-4" />} label="Total ficheiros" value={totalFiles} />
-        <StatCard icon={<FileText className="size-4" />} label="Curso" value="LEI" />
-        <StatCard icon={<FileCode className="size-4" />} label="Instituição" value="ISTEC" />
-      </div>
-
       {/* Search */}
       <div className="relative">
         <Search className="pointer-events-none absolute left-3.5 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
@@ -283,18 +273,6 @@ export function FileExplorer({ tree }: { tree: TreeNode }) {
             </section>
           );
         })}
-      </div>
-    </div>
-  );
-}
-
-function StatCard({ icon, label, value }: { icon: React.ReactNode; label: string; value: string | number }) {
-  return (
-    <div className="flex items-center gap-3 rounded-xl border border-border bg-card px-4 py-3">
-      <div className="flex size-8 shrink-0 items-center justify-center rounded-lg border border-border bg-muted/60 text-primary">{icon}</div>
-      <div className="min-w-0">
-        <div className="truncate text-base font-semibold leading-tight text-foreground">{value}</div>
-        <div className="truncate text-xs text-muted-foreground">{label}</div>
       </div>
     </div>
   );
