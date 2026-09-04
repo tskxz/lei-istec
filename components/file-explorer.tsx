@@ -257,7 +257,7 @@ export function FileExplorer({ tree }: { tree: TreeNode }) {
                 </div>
               </header>
 
-              <div className="max-h-80 overflow-y-auto pr-1">
+              <div className="max-h-[108px] overflow-y-auto pr-1">
                 {subject.children && subject.children.length > 0 ? (
                   subject.children.map((child) => (
                     <TreeItem
