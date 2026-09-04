@@ -73,12 +73,6 @@ function FileTypeIcon({ name, className }: { name: string; className?: string })
   return <FileIcon className={className} />;
 }
 
-function countFiles(node: TreeNode): number {
-  if (!node.isDirectory) return 1;
-  if (!node.children) return 0;
-  return node.children.reduce((acc, c) => acc + countFiles(c), 0);
-}
-
 /* Recursively filter tree by query, keeping directories that contain matches */
 function filterTree(node: TreeNode, query: string): TreeNode | null {
   if (!query) return node;
@@ -149,7 +143,7 @@ function TreeItem({
           )
         )}
         <span className="truncate">{node.name}</span>
-        {projectRepo ? (
+        {projectRepo && (
           <a
             href={projectRepo.repoUrl}
             target="_blank"
@@ -160,10 +154,6 @@ function TreeItem({
           >
             <GitHubIcon className="size-4" />
           </a>
-        ) : (
-          <span className="ml-auto rounded-md border border-border/40 bg-muted/50 px-2 py-0.5 font-mono text-[11px] font-normal text-muted-foreground">
-            {countFiles(node)}
-          </span>
         )}
       </button>
       {isOpen && node.children && node.children.length > 0 && (
@@ -238,7 +228,7 @@ export function FileExplorer({ tree }: { tree: TreeNode }) {
       </div>
 
       {/* Subject cards */}
-      <div className="grid gap-4 lg:grid-cols-2">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 items-start">
         {visibleSubjects.length === 0 && (
           <div className="col-span-full rounded-xl border border-border bg-card p-10 text-center text-muted-foreground">
             Nenhum resultado para <span className="text-foreground">&quot;{query}&quot;</span>.
@@ -267,7 +257,7 @@ export function FileExplorer({ tree }: { tree: TreeNode }) {
                 </div>
               </header>
 
-              <div className="max-h-80 overflow-y-auto pr-1">
+              <div className="max-h-64 overflow-y-auto pr-1">
                 {subject.children && subject.children.length > 0 ? (
                   subject.children.map((child) => (
                     <TreeItem
