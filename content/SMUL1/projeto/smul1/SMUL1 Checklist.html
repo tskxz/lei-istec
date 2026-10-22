@@ -1,0 +1,230 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>SMUL1 Checklist</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<style>
+/* Layout: single Notion-like column, week toggles stacked, sticky progress header */
+:root{
+  --bg:#f7f3ec; --surface:#fffdf9; --ink:#37352f; --muted:#7d7a73; --line:#e6dfd2;
+  --hover:#efe9de; --accent:#2f6f8f; --of-bg:#dfe9d9; --of-fg:#3f6a3a; --sg-bg:#ece6f3; --sg-fg:#6b4f8c;
+  --warn-bg:#fbe6e5; --warn-fg:#a8423b; --done:#9b978e; --bar:#d9d1c2;
+  --font:ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji",sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#1f1e1c; --surface:#262523; --ink:#e9e6df; --muted:#9d998f; --line:#3a3834;
+  --hover:#2e2c29; --accent:#7fb6d3; --of-bg:#2c3b2a; --of-fg:#a9d0a2; --sg-bg:#352c41; --sg-fg:#cdb5ea;
+  --warn-bg:#40261f; --warn-fg:#f0a59c; --done:#6f6c66; --bar:#3e3b36; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#1f1e1c; --surface:#262523; --ink:#e9e6df; --muted:#9d998f; --line:#3a3834;
+  --hover:#2e2c29; --accent:#7fb6d3; --of-bg:#2c3b2a; --of-fg:#a9d0a2; --sg-bg:#352c41; --sg-fg:#cdb5ea;
+  --warn-bg:#40261f; --warn-fg:#f0a59c; --done:#6f6c66; --bar:#3e3b36; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--font);font-size:15px;line-height:1.5;margin:0}
+.wrap{max-width:780px;margin:0 auto;padding-block:28px 60px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.icon{font-size:52px;line-height:1}
+h1{font-size:clamp(26px,5vw,36px);margin:8px 0 4px;letter-spacing:-.02em;text-wrap:balance}
+.sub{color:var(--muted);font-size:14px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+.sticky{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);z-index:5;padding:12px 0 10px;border-bottom:1px solid var(--line);margin-top:16px}
+.prog-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.bar{flex:1;min-width:160px;height:8px;background:var(--bar);border-radius:6px;overflow:hidden}
+.bar span{display:block;height:100%;background:var(--accent);width:0;transition:width .3s}
+.pct{font-variant-numeric:tabular-nums;font-weight:600;min-width:84px;text-align:right}
+.controls{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+.controls button{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:6px;padding:4px 10px;cursor:pointer}
+.controls button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.controls button:focus-visible,summary:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.next{margin-top:14px;display:flex;gap:10px;padding:10px 14px;border-radius:6px;background:var(--warn-bg);color:var(--warn-fg);font-size:14px}
+.legend{font-size:13px;color:var(--muted);margin-top:10px}
+.tag{font-size:11.5px;border-radius:4px;padding:0 6px;white-space:nowrap}
+.of{background:var(--of-bg);color:var(--of-fg)} .sg{background:var(--sg-bg);color:var(--sg-fg)}
+details{border-bottom:1px solid var(--line);padding:6px 0}
+summary{list-style:none;cursor:pointer;display:flex;align-items:baseline;gap:8px;padding:6px 4px;border-radius:5px;flex-wrap:wrap}
+summary::-webkit-details-marker{display:none}
+summary:hover{background:var(--hover)}
+summary .tri{color:var(--muted);transition:transform .15s;display:inline-block;width:12px}
+details[open] summary .tri{transform:rotate(90deg)}
+summary .t{font-weight:650;font-size:16px}
+summary .d{color:var(--muted);font-size:13px}
+summary .count{margin-left:auto;font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+.now{font-size:11px;background:var(--accent);color:var(--bg);border-radius:4px;padding:0 6px;font-weight:600}
+.grp{margin:4px 0 6px 24px}
+.grp h4{margin:8px 0 2px;font-size:13px;color:var(--muted);font-weight:600}
+.item{display:flex;gap:10px;align-items:flex-start;padding:3px 4px;border-radius:4px}
+.item:hover{background:var(--hover)}
+.item input{margin-top:4px;width:16px;height:16px;accent-color:var(--accent);flex:0 0 auto}
+.item label{flex:1;min-width:0;cursor:pointer}
+.item.done label{color:var(--done);text-decoration:line-through}
+.note{margin:6px 0 4px 24px;font-size:13px;color:var(--muted)}
+.status{font-size:12px;color:var(--muted);margin-top:6px}
+.mono{font-family:var(--mono);font-size:12.5px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <div class="icon" aria-hidden="true">📘</div>
+  <h1>SMUL1 · Checklist semanal</h1>
+  <div class="sub">Sistemas Multimédia I · avaliação contínua · MrWilson · 17 out 2026 → 16 jan 2027 + exame</div>
+
+  <div class="sticky">
+    <div class="prog-row">
+      <div class="bar" aria-hidden="true"><span id="barFill"></span></div>
+      <div class="pct" id="pct">0 / 0</div>
+    </div>
+    <div class="controls" role="group" aria-label="Filtros">
+      <button id="fAll" aria-pressed="true">Tudo</button>
+      <button id="fPending" aria-pressed="false">Só pendentes</button>
+      <button id="fOfficial" aria-pressed="false">Só oficiais 🏛️</button>
+      <button id="fNow">Ir para esta semana</button>
+    </div>
+  </div>
+
+  <div class="next" id="next"><span aria-hidden="true">⏰</span><span id="nextTxt">A calcular o próximo prazo…</span></div>
+  <div class="legend"><span class="tag of">🏛️ oficial</span> está nos documentos da UC · <span class="tag sg">💭 sugestão</span> recomendação, não exigida</div>
+  <div class="status" id="status">A ligar ao armazenamento…</div>
+
+  <div id="list"></div>
+</div>
+
+<script>
+const O='of', S='sg';
+const WEEKS=[
+ {id:'w1',t:'Semana 1 — Arranque',d:'17 → 23 out',from:'2026-10-17',to:'2026-10-23',g:{
+  'Fazer':[['w1a','Formar grupo de 3–5',O],['w1b','Criar canal da equipa + pasta partilhada',S],['w1c','Bloquear ~7 h/semana na agenda',S]],
+  'Estudar':[['w1d','PL01 completa (Tarefas 1–7)',O],['w1e','Rever slides T01: Scrum, FURPS+, include vs extend',S]]}},
+ {id:'w2',t:'Semana 2 — Modelo de Domínio',d:'24 → 30 out',from:'2026-10-24',to:'2026-10-30',g:{
+  'Fazer':[['w2a','Grupo fechado',S],['w2b','Ler Especificação + Funcionamento + Sprint A (2×)',S],['w2c','Anotar dúvidas para o "cliente" na OT',O],['w2d','Abrir o PI-UML.drawio e perceber o v1.0',S],['w2e','Toda a equipa com conta GitHub',S],['w2f','Escrever o acordo de equipa',S]],
+  'Estudar':[['w2g','PL02 (2 modelos de domínio)',O],['w2h','Entity vs Value Object, Aggregate Root',S],['w2i','📝 Exame: cartões de RUP + Scrum (45 min)',S]]}},
+ {id:'w3',t:'Semana 3 — Sprint Planning A',d:'31 out → 6 nov',from:'2026-10-31',to:'2026-11-06',g:{
+  'Fazer':[['w3a','Dividir as US do Sprint A de forma equitativa',O],['w3b','Propor 3 US extra (US_A014–A016) com prioridade',O],['w3c','Escolher Scrum Master / team leader',S],['w3d','Relatório: capa, introdução, enquadramento, objetivos',O],['w3e','Procurar no Moodle o "planeamento das tarefas fornecido"',O]],
+  '🎯 Marcos':[['w3m1','sáb 31 out: US atribuídas (dono + revisor), extra escolhidas, acordo assinado',S],['w3m2','qua 4 nov: A001 FURPS+ v1 e A002 Use Cases v1',S]],
+  'Estudar':[['w3f','📝 Exame: classificar 15 requisitos ALFAS por FURPS+',S]]}},
+ {id:'w4',t:'Semana 4 — GitHub',d:'7 → 13 nov',from:'2026-11-07',to:'2026-11-13',g:{
+  'Fazer':[['w4a','A006 repositório: estrutura, README, .gitignore, regras branch/PR, partilhado com docentes',O],['w4b','A011 GitHub Projects: issues com responsável, etiquetas, prioridade, estimativa',O],['w4c','A012 pipeline mínimo no Actions',O],['w4d','Rever A001/A002 com o professor na OT',S]],
+  '🎯 Marcos':[['w4m1','qua 11 nov: A003 relacional v2, A004 domínio v1, A009 métricas',S]],
+  'Estudar':[['w4e','📝 Exame: refazer PL01 T4.2 (Use Cases) em 15 min',S]]}},
+ {id:'w5',t:'Semana 5 — Fecho do Sprint A',d:'14 → 20 nov',from:'2026-11-14',to:'2026-11-20',g:{
+  '🎯 Marcos':[['w5m1','sáb 14 nov: A007, A012, A005, A008, A014–A016 em v1',S],['w5m2','seg 16 nov: freeze',S],['w5m3','qua 18 nov: relatório (A013) + slides (A010) prontos',S],['w5m4','qui 19 nov: ensaio do pitch de 10 min',S]],
+  'Entregar · sex 20 nov 23:59':[['w5a','ZIP LEI-SMUL1-PI-SA-NOME-NOME-NOME',O],['w5b','PDF LEI-SMUL1-PI-SA-R-NOME-NOME-NOME',O],['w5c','Submetido até às 18h',S]],
+  'Estudar':[['w5d','Sei explicar e alterar a minha US e defender as decisões',O],['w5e','📝 Exame: descrição estruturada de um UC',S]]}},
+ {id:'w6',t:'Semana 6 — Sprint Review A + Planning B',d:'21 → 27 nov',from:'2026-11-21',to:'2026-11-27',g:{
+  'Na aula':[['w6a','Apresentar a Sprint Review A (25% do PI)',O]],
+  'Fazer':[['w6b','Retrospetiva da equipa',S],['w6c','Dividir US do B + 3 extra',O],['w6d','Começar estudo UI/UX: personas → wireframes',O]],
+  'Estudar':[['w6e','Rever React (TINT2) e Flask básico (PROG3)',S],['w6f','📝 Exame: refazer PL01 T6 (BPMN BitCoffee)',S]]}},
+ {id:'w7',t:'Semana 7 — Flask + MVC',d:'28 nov → 4 dez',from:'2026-11-28',to:'2026-12-04',note:'As US do Sprint B saem a 21 nov; os itens de Fazer são antecipação.',g:{
+  'Fazer':[['w7a','Mockups dos ecrãs-chave (Figma)',S],['w7b','Projeto React: rotas, layout, componentes base, responsivo',S],['w7c','Script SQL do modelo relacional final',S]],
+  'Estudar':[['w7d','📝 Exame: refazer PL02 ex. 1 em 15 min',S]]}},
+ {id:'w8',t:'Semanas 8–9 — Construir o Sprint B',d:'5 → 18 dez',from:'2026-12-05',to:'2026-12-18',g:{
+  'Fazer':[['w8a','BD criada + dados fictícios de teste',S],['w8b','Esqueleto Flask ligado à BD',S],['w8c','i18n preparado (PT/EN)',S],['w8d','Relatório: Estudo UI/UX + Desenvolvimento do Projeto',O],['w8e','Combinar disponibilidade no Natal',S]],
+  'Entregar · sex 18 dez 23:59':[['w8f','ZIP + relatório PDF do Sprint B',O]],
+  'Estudar':[['w8g','📝 Exame: cartões de GitHub + Flask/MVC',S],['w8h','📝 Exame: refazer PL01 T7 (BPMN) em 20 min',S]]}},
+ {id:'w10',t:'Semana 10 — Sprint Review B + Planning C',d:'19 dez',from:'2026-12-19',to:'2026-12-19',g:{
+  'Na aula':[['w10a','Apresentar a Sprint Review B (25% do PI)',O]],
+  'Fazer':[['w10b','Retrospetiva B',S],['w10c','Dividir US do C + 3 extra',O],['w10d','Calendário de trabalho no Natal, por pessoa',S],['w10e','Perguntar o formato do poster',S]],
+  'Estudar':[['w10f','📝 Exame: refazer PL02 ex. 2',S]]}},
+ {id:'wx',t:'Natal — Sprint C sem aulas',d:'20 dez → 8 jan',from:'2026-12-20',to:'2027-01-08',note:'Lista antecipada a partir da especificação. Indicadores calculados sempre a partir da BD 🏛️.',g:{
+  'Fazer':[['wxa','Autenticação + 4 papéis, passwords com hash',S],['wxb','Registo com consentimento parental',S],['wxc','CRUD do backoffice',S],['wxd','Percurso pré → recurso → pós, nota + data, badge ≥ 85%',S],['wxe','Dashboard + export CSV',S],['wxf','Integrar frontend ↔ backend cedo',S]],
+  'Estudar':[['wxg','📝 Exame: simulado 1 (60 min)',S]]}},
+ {id:'w11',t:'Semana 11 — Reta final',d:'9 → 12 jan',from:'2027-01-09',to:'2027-01-12',g:{
+  'Fazer':[['w11a','Validar e testar as funcionalidades principais',O],['w11b','Relatório final: Resumo, Resultados, Conclusão, Limitações, IA',O],['w11c','Ensaiar o pitch final',S]],
+  'Entregar · ter 12 jan 23:59':[['w11d','ZIP Sprint C',O],['w11e','Relatório PDF Sprint C',O],['w11f','Poster',O]],
+  'Estudar':[['w11g','📝 Exame: rever erros do simulado 1',S]]}},
+ {id:'w12',t:'Semana 12 — Defesas finais',d:'14 → 19 jan',from:'2027-01-13',to:'2027-01-19',g:{
+  'Apresentar':[['w12a','qui 14 jan — BDDAD',O],['w12b','sex 15 jan — PROG3',O],['w12c','sáb 16 jan — SMUL1 Sprint Review C (50% do PI)',O],['w12d','ter 19 jan — TINT2',O]]}},
+ {id:'wex',t:'Exame — Parte I',d:'data a confirmar',from:'2027-01-20',to:'2027-02-28',g:{
+  'Preparar':[['wexa','📝 Simulado 2 completo',S],['wexb','Revisão final dos cartões',S],['wexc','Documento de identificação na mochila',O]]}},
+ {id:'wq',t:'A confirmar com o Prof. Helder',d:'quando possível',from:null,to:null,g:{
+  'Perguntas':[['wqa','Mínimo do exame: 8/20 ou 7,5? E mínimo de 9,5 no PI?',S],['wqb','Formato do poster do Sprint C',S],['wqc','Onde está o "planeamento das tarefas fornecido"',S],['wqd','Formato dos nomes dos ficheiros (SA / SA-R)',S]]}}
+];
+const DEADLINES=[['2026-11-20T23:59:00','Sprint A — ZIP + relatório no Moodle'],['2026-11-21T09:00:00','Sprint Review A'],['2026-12-18T23:59:00','Sprint B — ZIP + relatório no Moodle'],['2026-12-19T09:00:00','Sprint Review B'],['2027-01-12T23:59:00','Sprint C — ZIP + relatório + poster no Moodle'],['2027-01-16T09:00:00','Sprint Review C (SMUL1)']];
+
+let checked={}; let filter='all'; let db=null, ref=null, saveTimer=null, pending=false;
+const ALL=[]; WEEKS.forEach(w=>Object.values(w.g).forEach(a=>a.forEach(i=>ALL.push(i))));
+const list=document.getElementById('list');
+
+function todayISO(){const d=new Date();return d.toISOString().slice(0,10)}
+function currentWeek(){const t=todayISO();return WEEKS.find(w=>w.from&&t>=w.from&&t<=w.to)}
+function tagHTML(k){return k===O?'<span class="tag of">🏛️</span>':'<span class="tag sg">💭</span>'}
+function esc(s){return s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
+
+const openState={};
+function render(){
+  const cw=currentWeek();
+  list.innerHTML='';
+  WEEKS.forEach(w=>{
+    const items=Object.values(w.g).flat();
+    const done=items.filter(i=>checked[i[0]]).length;
+    const det=document.createElement('details'); det.id=w.id;
+    det.open = openState[w.id]!==undefined ? openState[w.id] : (cw ? w.id===cw.id : w.id==='w1');
+    det.addEventListener('toggle',()=>{openState[w.id]=det.open});
+    let html=`<summary><span class="tri" aria-hidden="true">▶</span><span class="t">${esc(w.t)}</span><span class="d">${esc(w.d)}</span>${cw&&cw.id===w.id?'<span class="now">esta semana</span>':''}<span class="count">${done}/${items.length}</span></summary>`;
+    if(w.note) html+=`<div class="note">${esc(w.note)}</div>`;
+    let shown=0;
+    for(const [g,arr] of Object.entries(w.g)){
+      const vis=arr.filter(i=>(filter!=='pending'||!checked[i[0]])&&(filter!=='official'||i[2]===O));
+      if(!vis.length) continue; shown+=vis.length;
+      html+=`<div class="grp"><h4>${esc(g)}</h4>`+vis.map(i=>`<div class="item${checked[i[0]]?' done':''}"><input type="checkbox" id="c_${i[0]}" data-id="${i[0]}"${checked[i[0]]?' checked':''}><label for="c_${i[0]}">${esc(i[1])} ${tagHTML(i[2])}</label></div>`).join('')+'</div>';
+    }
+    if(!shown) html+='<div class="note">Nada a mostrar com este filtro.</div>';
+    det.innerHTML=html; list.appendChild(det);
+  });
+  const n=ALL.filter(i=>checked[i[0]]).length;
+  document.getElementById('barFill').style.width=(ALL.length?n/ALL.length*100:0)+'%';
+  document.getElementById('pct').textContent=`${n} / ${ALL.length} · ${Math.round(n/ALL.length*100)}%`;
+}
+list.addEventListener('change',e=>{
+  const id=e.target.dataset&&e.target.dataset.id; if(!id) return;
+  if(e.target.checked) checked[id]=true; else delete checked[id];
+  render(); scheduleSave();
+});
+function scheduleSave(){
+  try{localStorage.setItem('smul1-checked',JSON.stringify(checked))}catch(_){}
+  if(!ref) return;
+  clearTimeout(saveTimer); saveTimer=setTimeout(save,700);
+}
+async function save(){
+  if(pending){saveTimer=setTimeout(save,400);return}
+  pending=true;
+  try{await ref.set({checked:{...checked},updatedAt:new Date().toISOString()});setStatus('Guardado ✓ — sincroniza entre os teus dispositivos')}
+  catch(e){setStatus('Não foi possível guardar online; o progresso fica só neste browser.')}
+  pending=false;
+}
+function setStatus(t){document.getElementById('status').textContent=t}
+
+function setFilter(f){filter=f;['fAll','fPending','fOfficial'].forEach(id=>document.getElementById(id).setAttribute('aria-pressed',String({fAll:'all',fPending:'pending',fOfficial:'official'}[id]===f)));render()}
+document.getElementById('fAll').onclick=()=>setFilter('all');
+document.getElementById('fPending').onclick=()=>setFilter('pending');
+document.getElementById('fOfficial').onclick=()=>setFilter('official');
+document.getElementById('fNow').onclick=()=>{const cw=currentWeek()||WEEKS[0];openState[cw.id]=true;render();document.getElementById(cw.id).scrollIntoView({behavior:'smooth',block:'start'})};
+
+function updateNext(){
+  const now=new Date(); const nx=DEADLINES.find(d=>new Date(d[0])>now);
+  const el=document.getElementById('nextTxt');
+  if(!nx){el.textContent='Todos os prazos do projeto já passaram. Foco no exame Parte I.';return}
+  const days=Math.ceil((new Date(nx[0])-now)/864e5);
+  const dt=new Date(nx[0]).toLocaleDateString('pt-PT',{weekday:'short',day:'numeric',month:'short'});
+  el.textContent=`Próximo prazo: ${nx[1]} — ${dt} (faltam ${days} dia${days===1?'':'s'})`;
+}
+
+try{const s=JSON.parse(localStorage.getItem('smul1-checked')||'{}'); if(s&&typeof s==='object') checked=s}catch(_){}
+render(); updateNext();
+
+(async()=>{
+  try{
+    db = window.claude ? await window.claude.use('db') : null;
+    if(!db){setStatus('Progresso guardado só neste browser.');return}
+    ref=db.doc('progress/main');
+    let first=true;
+    ref.onSnapshot(snap=>{
+      if(snap.metadata&&snap.metadata.hasPendingWrites) return;
+      const d=snap.exists?snap.data():null;
+      if(d&&d.checked&&typeof d.checked==='object'){checked={...d.checked};render();try{localStorage.setItem('smul1-checked',JSON.stringify(checked))}catch(_){}}
+      else if(first&&Object.keys(checked).length){scheduleSave()}
+      if(first) setStatus('Ligado ✓ — o progresso sincroniza entre os teus dispositivos');
+      first=false;
+    },()=>setStatus('Sem ligação ao armazenamento; o progresso fica só neste browser.'));
+  }catch(e){setStatus('Progresso guardado só neste browser.')}
+})();
+</script>
+
+</body></html>
